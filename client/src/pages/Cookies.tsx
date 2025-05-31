@@ -7,8 +7,13 @@ import { useEffect } from 'react';
 export default function Cookies() {
   const { content } = useLanguage();
 
-  useEffect(() => {
+  // Scroll to top immediately when component loads
+  if (typeof window !== 'undefined') {
     window.scrollTo(0, 0);
+  }
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
 
   const handleGoHome = () => {
