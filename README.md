@@ -10,8 +10,7 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 - **Animations**: Framer Motion
 - **Routing**: Wouter
 - **State Management**: TanStack React Query
-- **Backend**: Express.js with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
+- **Backend**: Express.js with TypeScript (minimal API for health checks)
 - **UI Components**: Radix UI primitives with shadcn/ui
 
 ## 📁 Project Structure
