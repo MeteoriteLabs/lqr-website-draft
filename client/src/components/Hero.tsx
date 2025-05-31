@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CompassOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 export default function Hero() {
   const [username, setUsername] = useState('');
@@ -48,35 +51,39 @@ export default function Hero() {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
               >
-                <label className="block text-sm font-medium mb-3">
+                <Label className="block text-sm font-medium mb-3 text-white">
                   {content.hero.inputLabel}
-                </label>
+                </Label>
                 <div className="flex flex-col sm:flex-row">
                   <span className="inline-flex items-center px-4 py-3 bg-white/20 border border-white/30 sm:border-r-0 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-sm whitespace-nowrap">
                     localqr.earth/
                   </span>
-                  <input 
-                    type="text" 
+                  <Input
+                    type="text"
                     placeholder={content.hero.inputPlaceholder}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="flex-1 px-4 py-3 bg-white/10 border border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cta-blue focus:border-transparent"
+                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue"
                     onKeyPress={(e) => e.key === 'Enter' && handleClaimQR()}
                   />
                 </div>
               </motion.div>
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleClaimQR}
-                disabled={!username.trim() || isLoading}
-                className="w-full lg:w-auto bg-cta-blue text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isLoading ? 'Creating your LocalQR...' : content.hero.ctaButton}
-              </motion.button>
+                <Button
+                  onClick={handleClaimQR}
+                  disabled={!username.trim() || isLoading}
+                  size="lg"
+                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg"
+                >
+                  {isLoading ? 'Creating your LocalQR...' : content.hero.ctaButton}
+                </Button>
+              </motion.div>
             </div>
           </motion.div>
 

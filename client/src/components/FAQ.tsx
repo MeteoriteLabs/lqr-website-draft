@@ -1,8 +1,12 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import { FAQItem } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const faqItems: FAQItem[] = [
   {
@@ -33,18 +37,7 @@ const faqItems: FAQItem[] = [
 ];
 
 export default function FAQ() {
-  const [openItems, setOpenItems] = useState<Set<string>>(new Set());
   const { content } = useLanguage();
-
-  const toggleItem = (itemId: string) => {
-    const newOpenItems = new Set(openItems);
-    if (newOpenItems.has(itemId)) {
-      newOpenItems.delete(itemId);
-    } else {
-      newOpenItems.add(itemId);
-    }
-    setOpenItems(newOpenItems);
-  };
 
   return (
     <section id="faq" className="bg-light-grey py-20">
@@ -64,47 +57,37 @@ export default function FAQ() {
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
-          {faqItems.map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-sm overflow-hidden"
-            >
-              <button
-                onClick={() => toggleItem(item.id)}
-                className="w-full px-4 sm:px-6 py-4 text-left font-semibold text-charcoal hover:bg-gray-50 transition-colors flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-cta-blue focus:ring-inset"
-                aria-expanded={openItems.has(item.id)}
-                aria-controls={`faq-content-${item.id}`}
-              >
-                <span>{item.question}</span>
-                <motion.div
-                  animate={{ rotate: openItems.has(item.id) ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <ChevronDown size={20} />
-                </motion.div>
-              </button>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto"
+        >
+          <Accordion type="multiple" className="space-y-4">
+            {faqItems.map((item, index) => (
               <motion.div
-                id={`faq-content-${item.id}`}
-                initial={false}
-                animate={{
-                  height: openItems.has(item.id) ? 'auto' : 0,
-                  opacity: openItems.has(item.id) ? 1 : 0,
-                }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden"
+                key={item.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
               >
-                <div className="px-6 pb-4">
-                  <p className="text-gray-600">{item.answer}</p>
-                </div>
+                <AccordionItem 
+                  value={item.id} 
+                  className="bg-white rounded-xl shadow-sm border-none px-0"
+                >
+                  <AccordionTrigger className="px-4 sm:px-6 py-4 text-left font-semibold text-charcoal hover:bg-gray-50 rounded-xl hover:no-underline">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 sm:px-6 pb-4 text-gray-600">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
               </motion.div>
-            </motion.div>
-          ))}
-        </div>
+            ))}
+          </Accordion>
+        </motion.div>
       </div>
     </section>
   );
