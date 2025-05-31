@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Plus, MapPin, Utensils, GripVertical, CheckCircle } from 'lucide-react';
 import { GridOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
+import { ScrollAnimated } from './ScrollAnimated';
 
 export default function CreateCustomize() {
   const { content } = useLanguage();
@@ -64,7 +65,7 @@ export default function CreateCustomize() {
               >
                 <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-charcoal">Generate your QR instantly</h4>
+                  <h4 className="font-semibold text-charcoal">Generate your link & QR instantly</h4>
                   <p className="text-gray-600">Your personalized QR is ready in seconds</p>
                 </div>
               </motion.div>

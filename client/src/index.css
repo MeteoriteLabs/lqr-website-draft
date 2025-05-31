@@ -29,6 +29,47 @@ a:focus-visible {
   transition: color 0.2s ease;
 }
 
+/* Global smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Enhanced button animations */
+.btn-animated {
+  transition: all 0.2s ease;
+  transform: translateY(0);
+}
+
+.btn-animated:hover {
+  transform: translateY(-2px);
+}
+
+.btn-animated:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Input field animations */
+.input-animated {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-animated:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;
