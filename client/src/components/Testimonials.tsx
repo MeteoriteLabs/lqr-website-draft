@@ -1,6 +1,6 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Testimonial } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -49,7 +49,7 @@ export default function Testimonials() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 340;
+      const scrollAmount = 280;
       scrollContainerRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
@@ -94,7 +94,7 @@ export default function Testimonials() {
                   hover: { duration: 0.2 }
                 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl p-4 sm:p-6 min-w-[280px] sm:min-w-[320px] flex-shrink-0 shadow-lg"
+                className="bg-white rounded-xl p-4 sm:p-6 w-[280px] flex-shrink-0 shadow-lg"
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
@@ -111,11 +111,6 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <p className="text-gray-700 italic">"{testimonial.quote}"</p>
-                  <div className="flex text-yellow-400">
-                    {Array(testimonial.rating).fill(0).map((_, i) => (
-                      <Star key={i} size={16} fill="currentColor" />
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}

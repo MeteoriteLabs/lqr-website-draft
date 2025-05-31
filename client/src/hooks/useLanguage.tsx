@@ -81,7 +81,7 @@ const content: Record<string, LanguageContent> = {
         privacy: 'Privacy Policy',
         cookies: 'Cookie Policy',
       },
-      copyright: '© 2024 LocalQR. All rights reserved.',
+      copyright: '© 2025 LocalQR. All rights reserved.',
     },
   },
   es: {
@@ -157,7 +157,7 @@ const content: Record<string, LanguageContent> = {
         privacy: 'Política de Privacidad',
         cookies: 'Política de Cookies',
       },
-      copyright: '© 2024 LocalQR. Todos los derechos reservados.',
+      copyright: '© 2025 LocalQR. Todos los derechos reservados.',
     },
   },
   fr: {
@@ -233,7 +233,7 @@ const content: Record<string, LanguageContent> = {
         privacy: 'Politique de Confidentialité',
         cookies: 'Politique des Cookies',
       },
-      copyright: '© 2024 LocalQR. Tous droits réservés.',
+      copyright: '© 2025 LocalQR. Tous droits réservés.',
     },
   },
 };
