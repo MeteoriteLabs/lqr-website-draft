@@ -1,0 +1,209 @@
+Final v0.dev Prompt — LocalQR Landing Page
+Build a beautiful, responsive landing page for LocalQR — a platform for travelers, locals, and businesses to share curated recommendations through a personalized QR code and short link.
+
+The site must be built using:
+
+React + TypeScript
+
+Tailwind CSS (with extendable theme)
+
+Framer Motion (for scroll animations and hover effects)
+
+The goal is to communicate simplicity, credibility, and global/local relevance, and to encourage signups through two focused CTAs. The design should follow a modular dark/light section pattern, include a language switcher, and use subtle SVG overlays (maps, outlines, stamps) for global/travel character.
+
+🌐 General UX/UI Guidelines
+Responsive (mobile-first)
+
+Accessible (WCAG AA+): color contrast, alt text, focus states
+
+Rounded, modern sans-serif typography (Inter or DM Sans)
+
+Use Tailwind utilities for layout and spacing
+
+No illustrations; use photo placeholders or mockups
+
+Include language switcher top-right
+
+Use non-intrusive SVG overlays in backgrounds for visual character
+
+🎨 Color Palette
+Purpose	HEX
+Hero Section	#1B3B1A (Evergreen)
+Share Section	#4B2E1D (Clay Brown)
+Analytics Section	#1A2B49 (Deep Blue)
+Referral Section	#471919 (Maroon Red)
+Testimonials/Footer	#2E2E2E and #121212 (Charcoal Greys)
+Light Sections	#FAFAF7 (Off-White), #F5F8F3 (Mint Grey), #E6ECE6 (Light Grey)
+CTA Section	#0066FF (Bright Blue)
+Text on Light	#2E2E2E, #555555
+Text on Dark	#FFFFFF
+
+🧩 Page Sections & Content
+🔝 1. Header (Sticky)
+LocalQR logo (left)
+
+Nav links: How It Works | Claim QR | FAQ | Contact (opens a new page)
+
+Buttons: Login (outline), Sign Up (filled)
+
+🌐 Language dropdown
+
+Transparent on top, bg-white shadow on scroll
+
+🎯 2. Hero (#1B3B1A)
+Headline: “All your recommendations in one simple QR and link.”
+
+Subtext: “Turn your knowledge of a place into a shareable guide — engage your followers, customers, travelers, and friends alike.”
+
+Input: localqr.earth/yourname
+
+Button: “Claim Your LocalQR”
+
+Visual: Phone screen, QR scan
+
+Subtle SVG overlay: compass or vintage world lines
+
+Text color: White
+
+Animation: fade-up, hover bounce on button
+
+✍️ 3. Create & Customize (#FAFAF7)
+Headline: “Create and customize your LocalQR in minutes”
+
+Subtext: “Add your favorite places, organize by city or theme, and generate your QR instantly.”
+
+Image: UI dashboard
+
+No CTA
+
+Optional: faint grid or map lines behind image
+
+📣 4. Share Anywhere (#4B2E1D)
+Headline: “Share it on socials, storefronts, or welcome kits”
+
+Subtext: “Your QR works wherever your story lives — bios, menus, signage, or travel books.”
+
+Visual: printed QR, storefront
+
+No CTA
+
+Text color: White
+
+📊 5. Analytics (#1A2B49)
+Headline: “Track clicks, referrals, and top-performing spots”
+
+Subtext: “Understand what’s resonating, and keep your list updated in real time.”
+
+Visual: analytics chart UI
+
+No CTA
+
+Text: White
+
+Overlay: dashed trail or pin patterns
+
+💰 6. Refer & Earn (#471919)
+Headline: “Share, refer, and earn”
+
+Subtext: “Earn rewards when your QR is used or shared — make your knowledge work for you.”
+
+No CTA (feature not yet live)
+
+Text: White
+
+Visual: coin/wallet motif
+
+Overlay: map stamp or badge graphic
+
+👥 7. Who is LocalQR For? (#F5F8F3)
+Headline: “Who is LocalQR for?”
+
+Subtext: “LocalQR fits the needs of explorers, entrepreneurs, and everyday locals — all in one scannable link.”
+
+Grid of 10 cards with icon + description:
+
+Travelers
+
+Influencers
+
+Airbnb Hosts
+
+Hotels
+
+Restaurants
+
+Cafes
+
+Local Guides
+
+Creators
+
+Tour Operators
+
+Any Business
+
+❤️ 8. Testimonials (#2E2E2E)
+Headline: “Loved by travelers, creators, and hosts”
+
+Subtext: “See how people around the world use LocalQR to share what matters most.”
+
+Horizontal scroll (Framer Motion)
+
+Card: Avatar, name, location/role, quote
+
+Text color: White
+
+❓ 9. FAQ (#E6ECE6)
+Headline: “Got questions?”
+
+Subtext: “We’ve answered the most common things people ask before getting started.”
+
+Accordion items:
+
+What is LocalQR?
+
+Is it free?
+
+Can I update my recommendations?
+
+How do I share my QR?
+
+Can businesses use this?
+
+🚀 10. Final CTA (#0066FF)
+Headline: “Start sharing your world today”
+
+Subtext: “Claim your free LocalQR and turn your local insights into shareable guides.”
+
+CTA Button: “Claim Your LocalQR – Free Forever”
+
+Visual: QR with device
+
+Overlay: faint world outline in background
+
+Text: White
+
+⚫ 11. Footer (#121212)
+Logo + tagline: “Your favorite places. One simple link.”
+
+Links: How it works, FAQ, Contact
+
+Socials: Instagram, Twitter, LinkedIn
+
+Email: hello@localqr.earth
+
+Legal:
+
+Terms & Conditions → /terms (new tab)
+
+Privacy Policy → /privacy (new tab)
+
+⚙️ Implementation & Interaction Rules
+Element	Instruction
+Animations	Use Framer for section fade-ins, CTA hover glow, testimonial scroll
+CTAs	Only in Hero and Final sections
+SVG Overlays	Add decorative elements (e.g. compass, map lines, trail routes) via absolute, z-0, opacity-10, pointer-events-none
+Responsive	Use Tailwind grid, flex, space-y-*, gap-* utilities
+Accessibility	Ensure keyboard nav, focus rings, contrast checks
+Typography	Use Inter, bold for headings, normal for body
+Language	Language switcher should control text (even if hardcoded placeholder for now)
