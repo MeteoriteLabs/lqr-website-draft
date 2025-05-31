@@ -63,7 +63,7 @@ export default function Hero() {
                     placeholder={content.hero.inputPlaceholder}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue"
+                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue pt-[10px] pb-[10px]"
                     onKeyPress={(e) => e.key === 'Enter' && handleClaimQR()}
                   />
                 </div>
