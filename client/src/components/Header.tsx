@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { QrCode, Globe, ChevronDown, Menu, X } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import { Link, useLocation } from 'wouter';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -85,16 +86,14 @@ export default function Header() {
             >
               {content.header.nav.faq}
             </button>
-            <a
+            <Link
               href="/contact"
-              target="_blank"
-              rel="noopener noreferrer"
               className={`transition-colors hover:opacity-75 ${
                 isScrolled ? 'text-charcoal' : 'text-white'
               }`}
             >
               {content.header.nav.contact}
-            </a>
+            </Link>
           </div>
 
           {/* Right Side */}
@@ -186,14 +185,12 @@ export default function Header() {
               >
                 {content.header.nav.faq}
               </button>
-              <a
+              <Link
                 href="/contact"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block text-charcoal hover:text-cta-blue transition-colors"
               >
                 {content.header.nav.contact}
-              </a>
+              </Link>
               <hr className="border-gray-200" />
               <div className="flex space-x-3">
                 <button className="flex-1 px-4 py-2 border border-charcoal text-charcoal rounded-lg hover:bg-charcoal hover:text-white transition-all">
