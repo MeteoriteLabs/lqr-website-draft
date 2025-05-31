@@ -116,7 +116,7 @@ export default function Header() {
                   toggleDropdown();
                 }}
                 className={`flex items-center space-x-1 transition-colors hover:opacity-75 ${
-                  isScrolled ? 'text-charcoal' : 'text-white'
+                  isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
                 }`}
               >
                 <Globe size={16} />
