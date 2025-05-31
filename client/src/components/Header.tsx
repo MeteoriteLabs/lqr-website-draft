@@ -67,12 +67,12 @@ export default function Header() {
               {content.header.nav.howItWorks}
             </button>
             <button
-              onClick={() => scrollToSection('claim-qr')}
+              onClick={() => scrollToSection('who-is-for')}
               className={`transition-colors hover:opacity-75 ${
                 isScrolled ? 'text-charcoal' : 'text-white'
               }`}
             >
-              {content.header.nav.claimQR}
+              {content.header.nav.whoIsFor}
             </button>
             <button
               onClick={() => scrollToSection('faq')}
@@ -172,10 +172,10 @@ export default function Header() {
                 {content.header.nav.howItWorks}
               </button>
               <button
-                onClick={() => scrollToSection('claim-qr')}
+                onClick={() => scrollToSection('who-is-for')}
                 className="block w-full text-left text-charcoal hover:text-cta-blue transition-colors"
               >
-                {content.header.nav.claimQR}
+                {content.header.nav.whoIsFor}
               </button>
               <button
                 onClick={() => scrollToSection('faq')}

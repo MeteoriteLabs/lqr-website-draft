@@ -32,7 +32,7 @@ export interface LanguageContent {
   header: {
     nav: {
       howItWorks: string;
-      claimQR: string;
+      whoIsFor: string;
       faq: string;
       contact: string;
     };

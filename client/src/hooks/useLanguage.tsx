@@ -12,7 +12,7 @@ const content: Record<string, LanguageContent> = {
     header: {
       nav: {
         howItWorks: 'How It Works',
-        claimQR: 'Claim QR',
+        whoIsFor: 'Who is it for?',
         faq: 'FAQ',
         contact: 'Contact',
       },
@@ -87,7 +87,7 @@ const content: Record<string, LanguageContent> = {
     header: {
       nav: {
         howItWorks: 'Cómo Funciona',
-        claimQR: 'Reclamar QR',
+        whoIsFor: '¿Para quién es?',
         faq: 'FAQ',
         contact: 'Contacto',
       },
@@ -162,7 +162,7 @@ const content: Record<string, LanguageContent> = {
     header: {
       nav: {
         howItWorks: 'Comment Ça Marche',
-        claimQR: 'Réclamer QR',
+        whoIsFor: 'Pour qui est-ce?',
         faq: 'FAQ',
         contact: 'Contact',
       },
