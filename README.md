@@ -65,6 +65,7 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 
 - **Multi-language Support**: English, Spanish, and French translations
 - **Responsive Design**: Mobile-first approach optimized for all screen sizes (320px+)
+- **shadcn/ui Components**: Button, Input, Label, and Accordion components with proper styling
 - **Dark/Light Sections**: Modular color-coded sections following brand guidelines
 - **Smooth Animations**: Framer Motion powered scroll animations and hover effects
 - **Custom Color Palette**: Brand-specific colors including Evergreen, Clay Brown, Deep Blue, Maroon Red
@@ -98,12 +99,16 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 - `@tanstack/react-query` (^5.60.5): Server state management
 - `tailwindcss` (^3.4.17): Utility-first CSS framework
 
-### UI Components
-- `@radix-ui/*`: Accessible UI primitives
-- `lucide-react`: Icon library
-- `class-variance-authority`: Utility for conditional classes
-- `tailwind-merge`: Merge Tailwind classes
-- `cmdk`: Command palette component
+### UI Components & Styling
+- `@radix-ui/react-accordion` (^1.2.4): Accordion component primitive
+- `@radix-ui/react-label` (^2.1.3): Label component primitive  
+- `@radix-ui/react-slot` (^1.2.0): Slot component for composition
+- `@radix-ui/react-toast` (^1.2.7): Toast notification primitive
+- `@radix-ui/react-tooltip` (^1.2.0): Tooltip component primitive
+- `lucide-react` (^0.453.0): Icon library
+- `class-variance-authority` (^0.7.1): Utility for conditional classes
+- `tailwind-merge` (^2.6.0): Merge Tailwind classes
+- `tailwindcss-animate` (^1.0.7): Animation utilities for Tailwind
 
 ### Development Dependencies
 - `@vitejs/plugin-react`: Vite React plugin
@@ -251,12 +256,12 @@ For Replit deployment, the application is already configured with the necessary 
 
 ## 🔧 Development Notes
 
-- The project is a static landing page with minimal backend requirements
-- No database setup or configuration needed
-- The Vite development server is integrated with Express for seamless development
-- All components are built with accessibility in mind using proper ARIA attributes
-- The design system is extensible and follows atomic design principles
-- Simple storage interface is included for future extensibility if needed
+- **shadcn/ui Integration**: Uses shadcn/ui components built on Radix UI primitives for consistency
+- **Minimal Dependencies**: Removed 24 unused Radix UI packages, keeping only essential ones
+- **Component Architecture**: Landing page uses Button, Input, Label, and Accordion from shadcn/ui
+- **No Database Required**: Static landing page with minimal backend for health checks
+- **Accessibility First**: All components built with proper ARIA attributes and keyboard navigation
+- **Extensible Design**: Component system ready for additional shadcn/ui components as needed
 
 ## 📝 Contributing
 
