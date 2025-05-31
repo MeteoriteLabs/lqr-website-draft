@@ -8,9 +8,9 @@ export default function CreateCustomize() {
   const { content } = useLanguage();
 
   return (
-    <section id="how-it-works" className="py-20" style={{ backgroundColor: 'hsl(var(--soft-off-white))' }}>
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="how-it-works" className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: 'hsl(var(--soft-off-white))' }}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -19,10 +19,10 @@ export default function CreateCustomize() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-charcoal leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal leading-tight">
               {content.sections.createCustomize.headline}
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               {content.sections.createCustomize.subtext}
             </p>
             
