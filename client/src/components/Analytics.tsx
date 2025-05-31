@@ -7,7 +7,7 @@ export default function Analytics() {
   const { content } = useLanguage();
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--cool-mist))' }}>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: '#E3EEF1' }}>
       <AnalyticsOverlay />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

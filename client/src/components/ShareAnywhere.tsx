@@ -7,7 +7,7 @@ export default function ShareAnywhere() {
   const { content } = useLanguage();
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--warm-beige))' }}>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden text-white" style={{ backgroundColor: '#6B4C3B' }}>
       <div className="floating-background">
         <TravelPathPattern />
       </div>
