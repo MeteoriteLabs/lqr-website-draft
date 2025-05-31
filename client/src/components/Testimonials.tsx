@@ -62,17 +62,18 @@ export default function Testimonials() {
     const interval = setInterval(() => {
       if (scrollContainerRef.current) {
         const container = scrollContainerRef.current;
-        const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 5;
+        const cardWidth = 280 + 24; // Card width + gap
+        const totalWidth = cardWidth * testimonials.length;
         
-        if (isAtEnd) {
-          // Reset to beginning
-          container.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          // Continue scrolling
-          scroll('right');
+        // If we've scrolled past the original set, reset to beginning
+        if (container.scrollLeft >= totalWidth) {
+          container.scrollLeft = 0;
         }
+        
+        // Continue scrolling
+        container.scrollBy({ left: cardWidth, behavior: 'smooth' });
       }
-    }, 4000); // Auto-scroll every 4 seconds
+    }, 3000); // Auto-scroll every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -102,9 +103,9 @@ export default function Testimonials() {
             className="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {testimonials.map((testimonial, index) => (
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
               <motion.div
-                key={testimonial.id}
+                key={`${testimonial.id}-${index}`}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 whileHover={{ y: -4 }}
