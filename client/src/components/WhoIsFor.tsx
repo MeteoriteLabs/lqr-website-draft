@@ -15,7 +15,7 @@ import { UseCase } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const useCases: UseCase[] = [
-  { id: '1', title: 'Travelers', description: 'Share discovered gems with fellow explorers', icon: 'plane', color: 'bg-cta-blue' },
+  { id: '1', title: 'Travelers', description: 'Share discovered gems with fellow explorers', icon: 'plane', color: 'bg-blue-500' },
   { id: '2', title: 'Influencers', description: 'Monetize local knowledge and build community', icon: 'star', color: 'bg-pink-500' },
   { id: '3', title: 'Airbnb Hosts', description: 'Enhance guest experience with local insights', icon: 'home', color: 'bg-emerald-500' },
   { id: '4', title: 'Hotels', description: 'Provide curated local recommendations', icon: 'building', color: 'bg-purple-500' },
