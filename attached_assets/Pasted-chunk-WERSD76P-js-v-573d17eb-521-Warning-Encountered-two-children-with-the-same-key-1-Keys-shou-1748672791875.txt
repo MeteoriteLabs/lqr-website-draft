@@ -1,0 +1,63 @@
+chunk-WERSD76P.js?v=573d17eb:521 Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at section
+    at Testimonials (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/src/components/Testimonials.tsx?t=1748672585597:62:23)
+    at div
+    at Home
+    at Route (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:323:16)
+    at Switch (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:379:17)
+    at Router
+    at Provider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-CUI6LDBH.js?v=573d17eb:22:15)
+    at TooltipProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=573d17eb:3077:5)
+    at QueryClientProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=573d17eb:2805:3)
+    at App
+printWarning @ chunk-WERSD76P.js?v=573d17eb:521Understand this error
+chunk-WERSD76P.js?v=573d17eb:521 Warning: Encountered two children with the same key, `2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at section
+    at Testimonials (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/src/components/Testimonials.tsx?t=1748672585597:62:23)
+    at div
+    at Home
+    at Route (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:323:16)
+    at Switch (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:379:17)
+    at Router
+    at Provider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-CUI6LDBH.js?v=573d17eb:22:15)
+    at TooltipProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=573d17eb:3077:5)
+    at QueryClientProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=573d17eb:2805:3)
+    at App
+printWarning @ chunk-WERSD76P.js?v=573d17eb:521Understand this error
+chunk-WERSD76P.js?v=573d17eb:521 Warning: Encountered two children with the same key, `3`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at section
+    at Testimonials (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/src/components/Testimonials.tsx?t=1748672585597:62:23)
+    at div
+    at Home
+    at Route (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:323:16)
+    at Switch (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:379:17)
+    at Router
+    at Provider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-CUI6LDBH.js?v=573d17eb:22:15)
+    at TooltipProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=573d17eb:3077:5)
+    at QueryClientProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=573d17eb:2805:3)
+    at App
+printWarning @ chunk-WERSD76P.js?v=573d17eb:521Understand this error
+chunk-WERSD76P.js?v=573d17eb:521 Warning: Encountered two children with the same key, `4`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at section
+    at Testimonials (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/src/components/Testimonials.tsx?t=1748672585597:62:23)
+    at div
+    at Home
+    at Route (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:323:16)
+    at Switch (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=573d17eb:379:17)
+    at Router
+    at Provider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-CUI6LDBH.js?v=573d17eb:22:15)
+    at TooltipProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=573d17eb:3077:5)
+    at QueryClientProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=573d17eb:2805:3)
+    at App

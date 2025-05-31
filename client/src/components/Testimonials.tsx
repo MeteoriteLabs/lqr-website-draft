@@ -103,9 +103,9 @@ export default function Testimonials() {
             className="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
+            {[...testimonials, ...testimonials.map(t => ({...t, id: `${t.id}-duplicate`}))].map((testimonial, index) => (
               <motion.div
-                key={`${testimonial.id}-${index}`}
+                key={testimonial.id}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 whileHover={{ y: -4 }}
