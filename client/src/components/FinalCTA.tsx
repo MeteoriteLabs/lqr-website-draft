@@ -17,7 +17,7 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="bg-cta-blue py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--blue-final))' }}>
       <GridMapPattern />
       <WorldOverlay />
 
