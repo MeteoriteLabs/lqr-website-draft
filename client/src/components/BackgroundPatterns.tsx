@@ -3,141 +3,61 @@
 export const WorldMapPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute top-0 left-0 w-full h-full opacity-[0.12]"
-      viewBox="0 0 1200 700"
+      className="absolute top-0 left-0 w-full h-full opacity-[0.08]"
+      viewBox="0 0 1000 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* North America - More detailed shape */}
+      {/* Global world map silhouette */}
       <path
-        d="M80 180 Q90 150 120 160 Q140 140 170 150 Q200 140 230 160 Q250 170 240 200 Q230 230 220 250 Q200 270 180 260 Q160 250 140 240 Q120 230 100 220 Q80 210 70 190 Q75 180 80 180 Z"
-        fill="currentColor"
-        opacity="0.2"
+        d="M100 200 Q120 180 150 190 Q180 185 210 195 Q240 200 270 210 Q300 205 330 215 Q360 220 390 225 Q420 230 450 235 Q480 240 510 245 Q540 250 570 255 Q600 260 630 265 Q660 270 690 275 Q720 280 750 285 Q780 290 810 295 Q840 300 870 305 Q900 310 930 315"
         stroke="currentColor"
-        strokeWidth="0.5"
-      />
-      
-      {/* Canada extension */}
-      <path
-        d="M120 130 Q150 120 180 130 Q200 125 220 135 Q240 140 235 160 Q230 180 220 170 Q200 165 180 160 Q160 155 140 150 Q125 145 120 130 Z"
-        fill="currentColor"
+        strokeWidth="1"
+        fill="none"
         opacity="0.15"
-        stroke="currentColor"
-        strokeWidth="0.5"
       />
       
-      {/* South America - More recognizable shape */}
+      {/* World map outline - unified design */}
       <path
-        d="M180 320 Q190 310 200 330 Q205 360 200 390 Q195 420 190 450 Q185 480 180 510 Q175 530 170 520 Q165 490 160 460 Q155 430 160 400 Q165 370 170 340 Q175 320 180 320 Z"
+        d="M80 220 C120 200, 180 210, 220 205 C260 200, 300 215, 340 220 C380 225, 420 230, 460 235 C500 240, 540 245, 580 250 C620 255, 660 260, 700 265 C740 270, 780 275, 820 280 C860 285, 900 290, 940 295 C940 320, 920 340, 880 345 C840 350, 800 355, 760 360 C720 365, 680 370, 640 375 C600 380, 560 385, 520 390 C480 395, 440 400, 400 405 C360 410, 320 415, 280 420 C240 425, 200 430, 160 435 C120 440, 80 445, 80 420 C80 380, 80 340, 80 300 Z"
         fill="currentColor"
-        opacity="0.18"
+        opacity="0.12"
         stroke="currentColor"
         strokeWidth="0.5"
       />
       
-      {/* Europe - More detailed with peninsulas */}
-      <path
-        d="M500 160 Q520 150 540 155 Q560 160 575 170 Q590 180 585 200 Q580 220 570 215 Q560 210 550 205 Q540 200 530 195 Q520 190 510 185 Q500 180 495 170 Q498 160 500 160 Z"
-        fill="currentColor"
-        opacity="0.2"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
+      {/* Latitude lines */}
+      <line x1="50" y1="180" x2="950" y2="180" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
+      <line x1="50" y1="220" x2="950" y2="220" stroke="currentColor" strokeWidth="0.3" opacity="0.1" strokeDasharray="3 6" />
+      <line x1="50" y1="260" x2="950" y2="260" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
+      <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
       
-      {/* Scandinavia */}
-      <path
-        d="M520 130 Q530 120 540 125 Q550 130 545 140 Q540 150 535 145 Q530 140 525 135 Q522 130 520 130 Z"
-        fill="currentColor"
-        opacity="0.15"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
+      {/* Longitude lines */}
+      <line x1="200" y1="150" x2="200" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
+      <line x1="350" y1="150" x2="350" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
+      <line x1="500" y1="150" x2="500" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
+      <line x1="650" y1="150" x2="650" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
+      <line x1="800" y1="150" x2="800" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
       
-      {/* Africa - More recognizable with characteristic shape */}
-      <path
-        d="M480 220 Q500 210 520 220 Q540 230 545 260 Q550 290 545 320 Q540 350 535 380 Q530 410 525 440 Q520 460 515 450 Q510 420 505 390 Q500 360 495 330 Q490 300 485 270 Q480 240 475 220 Q477 215 480 220 Z"
-        fill="currentColor"
-        opacity="0.22"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
+      {/* Globe-like curved projection lines */}
+      <ellipse cx="500" cy="250" rx="400" ry="100" stroke="currentColor" strokeWidth="0.4" fill="none" opacity="0.1" strokeDasharray="4 8" />
+      <ellipse cx="500" cy="250" rx="300" ry="75" stroke="currentColor" strokeWidth="0.3" fill="none" opacity="0.08" strokeDasharray="4 8" />
+      <ellipse cx="500" cy="250" rx="200" ry="50" stroke="currentColor" strokeWidth="0.3" fill="none" opacity="0.08" strokeDasharray="4 8" />
       
-      {/* Madagascar */}
-      <circle cx="565" cy="420" r="8" fill="currentColor" opacity="0.12" />
+      {/* Scattered location dots representing global connectivity */}
+      <circle cx="150" cy="200" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="280" cy="230" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="420" cy="240" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="580" cy="260" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="720" cy="280" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="850" cy="300" r="2" fill="currentColor" opacity="0.1" />
       
-      {/* Asia - Large detailed continent */}
-      <path
-        d="M600 140 Q650 130 700 140 Q750 150 800 160 Q850 170 880 180 Q900 190 895 220 Q890 250 880 240 Q860 230 840 220 Q820 210 800 200 Q780 190 760 185 Q740 180 720 175 Q700 170 680 165 Q660 160 640 155 Q620 150 605 145 Q600 142 600 140 Z"
-        fill="currentColor"
-        opacity="0.25"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
-      
-      {/* India subcontinent */}
-      <path
-        d="M720 260 Q730 250 740 260 Q750 270 745 290 Q740 310 735 300 Q730 290 725 280 Q722 270 720 260 Z"
-        fill="currentColor"
-        opacity="0.18"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
-      
-      {/* China/Eastern Asia extension */}
-      <path
-        d="M820 180 Q840 170 860 180 Q880 190 875 210 Q870 230 860 225 Q850 220 840 215 Q830 210 825 200 Q822 190 820 180 Z"
-        fill="currentColor"
-        opacity="0.2"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
-      
-      {/* Australia - More detailed with characteristic shape */}
-      <path
-        d="M750 450 Q780 445 810 455 Q840 465 845 485 Q850 505 840 510 Q820 515 800 510 Q780 505 760 500 Q750 495 745 485 Q748 470 750 450 Z"
-        fill="currentColor"
-        opacity="0.2"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      />
-      
-      {/* New Zealand */}
-      <circle cx="880" cy="520" r="4" fill="currentColor" opacity="0.12" />
-      <circle cx="885" cy="535" r="3" fill="currentColor" opacity="0.12" />
-      
-      {/* British Isles */}
-      <circle cx="485" cy="140" r="6" fill="currentColor" opacity="0.15" />
-      <circle cx="490" cy="150" r="3" fill="currentColor" opacity="0.12" />
-      
-      {/* Japan */}
-      <circle cx="920" cy="220" r="5" fill="currentColor" opacity="0.15" />
-      <circle cx="925" cy="235" r="3" fill="currentColor" opacity="0.12" />
-      
-      {/* Connection lines between continents */}
-      <path
-        d="M250 180 Q350 170 480 165"
-        stroke="currentColor"
-        strokeWidth="0.8"
-        strokeDasharray="2 4"
-        opacity="0.3"
-        fill="none"
-      />
-      <path
-        d="M575 170 Q650 165 720 160"
-        stroke="currentColor"
-        strokeWidth="0.8"
-        strokeDasharray="2 4"
-        opacity="0.3"
-        fill="none"
-      />
-      <path
-        d="M545 230 Q600 225 650 220"
-        stroke="currentColor"
-        strokeWidth="0.8"
-        strokeDasharray="2 4"
-        opacity="0.3"
-        fill="none"
-      />
+      {/* Additional smaller dots */}
+      <circle cx="200" cy="270" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="350" cy="210" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="500" cy="290" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="650" cy="220" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="800" cy="270" r="1.5" fill="currentColor" opacity="0.08" />
     </svg>
   </div>
 );
