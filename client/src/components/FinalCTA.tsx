@@ -17,22 +17,22 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--blue-final))' }}>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--blue-final))' }}>
       <GridMapPattern />
       <WorldOverlay />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center space-y-8"
+          className="text-center space-y-6 sm:space-y-8"
         >
-          <h2 className="text-3xl lg:text-6xl font-bold text-white leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
             {content.sections.finalCTA.headline}
           </h2>
-          <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto">
             {content.sections.finalCTA.subtext}
           </p>
           
