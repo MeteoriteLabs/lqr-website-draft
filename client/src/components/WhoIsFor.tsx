@@ -82,7 +82,7 @@ export default function WhoIsFor() {
               >
                 <div className="text-center space-y-4">
                   <div className={`w-16 h-16 ${useCase.color} rounded-full mx-auto flex items-center justify-center`}>
-                    <IconComponent className="text-white" size={24} />
+                    {IconComponent && <IconComponent className="text-white" size={24} />}
                   </div>
                   <h3 className="font-semibold text-charcoal">{useCase.title}</h3>
                   <p className="text-sm text-gray-600">{useCase.description}</p>

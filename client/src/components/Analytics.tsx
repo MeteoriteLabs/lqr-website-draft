@@ -128,7 +128,7 @@ export default function Analytics() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
                 viewport={{ once: true }}
-                className="h-32 bg-gray-50 rounded-lg flex items-end justify-center space-x-2 p-4"
+                className="h-32 bg-gray-100 rounded-lg flex items-end justify-center space-x-2 p-4 border border-gray-200"
               >
                 {[60, 80, 40, 90, 70, 100, 55].map((height, index) => (
                   <motion.div
@@ -137,7 +137,7 @@ export default function Analytics() {
                     whileInView={{ height: `${height}%` }}
                     transition={{ delay: 1 + index * 0.1, duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="w-4 bg-cta-blue rounded-t"
+                    className="w-4 bg-cta-blue rounded-t shadow-sm"
                   />
                 ))}
               </motion.div>
