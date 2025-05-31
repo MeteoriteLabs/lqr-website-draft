@@ -7,7 +7,7 @@ export default function ReferEarn() {
   const { content } = useLanguage();
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--clay-tone))' }}>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden text-white" style={{ backgroundColor: '#7C3F2C' }}>
       <PassportStampPattern />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

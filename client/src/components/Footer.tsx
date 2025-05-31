@@ -7,7 +7,7 @@ export default function Footer() {
   const { content } = useLanguage();
 
   return (
-    <footer className="py-16 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--deep-charcoal))' }}>
+    <footer className="py-16 relative overflow-hidden" style={{ backgroundColor: '#1A1A1A' }}>
       <GlobePattern />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
