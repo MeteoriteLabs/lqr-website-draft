@@ -18,12 +18,12 @@ export default function Analytics() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-white space-y-6"
+            className="text-gray-900 space-y-6"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               {content.sections.analytics.headline}
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
               {content.sections.analytics.subtext}
             </p>
             
@@ -38,8 +38,8 @@ export default function Analytics() {
               >
                 <BarChart3 className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">See what's working</h4>
-                  <p className="text-gray-300">Track popularity of your recommendations</p>
+                  <h4 className="font-semibold text-gray-900">See what's working</h4>
+                  <p className="text-gray-700">Track popularity of your recommendations</p>
                 </div>
               </motion.div>
               
@@ -52,8 +52,8 @@ export default function Analytics() {
               >
                 <Eye className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Who's scanning</h4>
-                  <p className="text-gray-300">Monitor QR scans and updates</p>
+                  <h4 className="font-semibold text-gray-900">Who's scanning</h4>
+                  <p className="text-gray-700">Monitor QR scans and updates</p>
                 </div>
               </motion.div>
               
@@ -66,8 +66,8 @@ export default function Analytics() {
               >
                 <Globe className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Top-performing spots</h4>
-                  <p className="text-gray-300">Data-driven insights for better curation</p>
+                  <h4 className="font-semibold text-gray-900">Top-performing spots</h4>
+                  <p className="text-gray-700">Data-driven insights for better curation</p>
                 </div>
               </motion.div>
             </div>
