@@ -3,55 +3,55 @@
 export const WorldMapPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute top-4 right-4 w-96 h-96 opacity-[0.12]"
+      className="absolute top-5 right-5 w-80 h-80 lg:w-96 lg:h-96 opacity-[0.4]"
       viewBox="0 0 400 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Earth circle */}
-      <circle cx="200" cy="200" r="180" fill="currentColor" opacity="0.08" stroke="currentColor" strokeWidth="1" />
+      <circle cx="200" cy="200" r="180" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" />
       
       {/* Continent silhouettes on the earth */}
       {/* North America */}
       <path
         d="M80 160 Q100 140 130 150 Q150 145 170 155 Q185 160 180 180 Q175 200 165 195 Q145 190 125 185 Q105 180 85 175 Q75 170 80 160 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* South America */}
       <path
         d="M140 220 Q145 210 150 230 Q152 250 150 270 Q148 290 145 300 Q142 310 140 300 Q138 280 140 260 Q142 240 140 220 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* Europe */}
       <path
         d="M220 140 Q230 135 240 142 Q250 148 245 158 Q240 168 235 163 Q225 158 220 153 Q215 148 220 140 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* Africa */}
       <path
         d="M210 170 Q220 165 230 175 Q235 185 232 200 Q230 220 228 240 Q225 260 220 270 Q215 275 212 265 Q210 245 212 225 Q214 205 212 185 Q210 175 210 170 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* Asia */}
       <path
         d="M250 150 Q280 145 310 155 Q330 165 325 185 Q320 205 310 200 Q290 195 270 190 Q250 185 245 175 Q248 165 250 150 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* Australia */}
       <path
         d="M280 260 Q300 255 315 265 Q325 275 320 285 Q315 295 305 290 Q290 285 280 280 Q275 275 280 260 Z"
         fill="white"
-        opacity="0.4"
+        opacity="0.7"
       />
       
       {/* Grid lines on the earth */}
