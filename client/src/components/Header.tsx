@@ -45,7 +45,10 @@ export default function Header() {
       <div className="container mx-auto px-4 lg:px-8">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <button 
+            onClick={() => scrollToSection('hero')}
+            className="flex items-center space-x-2 transition-opacity hover:opacity-75"
+          >
             <div className="w-8 h-8 bg-cta-blue rounded-lg flex items-center justify-center">
               <QrCode className="text-white" size={16} />
             </div>
@@ -54,7 +57,7 @@ export default function Header() {
             }`}>
               LocalQR
             </span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">

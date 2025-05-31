@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="claim-qr" className="bg-evergreen relative overflow-hidden min-h-screen flex items-center">
+    <section id="hero" className="bg-evergreen relative overflow-hidden min-h-screen flex items-center">
       <CompassOverlay />
       
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">

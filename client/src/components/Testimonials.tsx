@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Testimonial } from '@/types';
@@ -56,6 +56,26 @@ export default function Testimonials() {
       });
     }
   };
+
+  // Auto-scroll functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current) {
+        const container = scrollContainerRef.current;
+        const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 5;
+        
+        if (isAtEnd) {
+          // Reset to beginning
+          container.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          // Continue scrolling
+          scroll('right');
+        }
+      }
+    }, 4000); // Auto-scroll every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="bg-charcoal py-20">
