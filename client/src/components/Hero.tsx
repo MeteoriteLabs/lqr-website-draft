@@ -49,7 +49,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
+                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 animated-border"
               >
                 <Label className="block text-sm font-medium mb-3 text-white">
                   {content.hero.inputLabel}
