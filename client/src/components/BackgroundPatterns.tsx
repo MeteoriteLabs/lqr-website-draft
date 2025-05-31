@@ -11,47 +11,47 @@ export const WorldMapPattern = () => (
       {/* Earth circle */}
       <circle cx="200" cy="200" r="180" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" />
       
-      {/* Continent silhouettes on the earth */}
-      {/* North America */}
+      {/* Recognizable continent silhouettes */}
+      {/* North America - more recognizable shape */}
       <path
-        d="M80 160 Q100 140 130 150 Q150 145 170 155 Q185 160 180 180 Q175 200 165 195 Q145 190 125 185 Q105 180 85 175 Q75 170 80 160 Z"
+        d="M50 140 Q70 120 100 130 Q130 125 160 135 Q180 140 185 160 Q190 180 185 200 Q180 220 170 215 Q150 210 130 205 Q100 200 80 190 Q60 180 50 160 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
-      {/* South America */}
+      {/* South America - elongated shape */}
       <path
-        d="M140 220 Q145 210 150 230 Q152 250 150 270 Q148 290 145 300 Q142 310 140 300 Q138 280 140 260 Q142 240 140 220 Z"
+        d="M120 240 Q125 230 130 250 Q135 270 132 290 Q130 310 128 330 Q125 350 120 340 Q115 320 118 300 Q120 280 120 260 Q120 250 120 240 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
-      {/* Europe */}
+      {/* Europe - small but visible */}
       <path
-        d="M220 140 Q230 135 240 142 Q250 148 245 158 Q240 168 235 163 Q225 158 220 153 Q215 148 220 140 Z"
+        d="M200 120 Q215 115 230 125 Q240 135 235 145 Q230 155 220 150 Q210 145 205 140 Q200 135 200 120 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
-      {/* Africa */}
+      {/* Africa - distinctive shape */}
       <path
-        d="M210 170 Q220 165 230 175 Q235 185 232 200 Q230 220 228 240 Q225 260 220 270 Q215 275 212 265 Q210 245 212 225 Q214 205 212 185 Q210 175 210 170 Z"
+        d="M190 160 Q205 155 220 165 Q230 175 228 195 Q225 215 222 235 Q220 255 218 275 Q215 295 210 285 Q205 265 208 245 Q210 225 210 205 Q210 185 205 175 Q195 165 190 160 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
-      {/* Asia */}
+      {/* Asia - large landmass */}
       <path
-        d="M250 150 Q280 145 310 155 Q330 165 325 185 Q320 205 310 200 Q290 195 270 190 Q250 185 245 175 Q248 165 250 150 Z"
+        d="M240 130 Q280 125 320 140 Q350 155 345 180 Q340 205 330 200 Q310 195 290 190 Q270 185 250 180 Q245 170 240 160 Q238 145 240 130 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
-      {/* Australia */}
+      {/* Australia - small but recognizable */}
       <path
-        d="M280 260 Q300 255 315 265 Q325 275 320 285 Q315 295 305 290 Q290 285 280 280 Q275 275 280 260 Z"
+        d="M300 280 Q320 275 340 285 Q350 295 345 305 Q340 315 330 310 Q315 305 305 300 Q295 295 300 280 Z"
         fill="white"
-        opacity="0.7"
+        opacity="0.8"
       />
       
       {/* Grid lines on the earth */}
