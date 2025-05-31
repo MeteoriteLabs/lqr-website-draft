@@ -67,14 +67,12 @@ export default function Footer() {
               >
                 {content.footer.links.faq}
               </button>
-              <a
+              <Link
                 href="/contact"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
                 {content.footer.links.contact}
-              </a>
+              </Link>
             </div>
           </div>
 
