@@ -3,7 +3,7 @@
 export const WorldMapPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute top-0 left-0 w-full h-full opacity-[0.08]"
+      className="absolute top-0 left-0 w-full h-full opacity-[0.2]"
       viewBox="0 0 1000 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -14,50 +14,50 @@ export const WorldMapPattern = () => (
         stroke="currentColor"
         strokeWidth="1"
         fill="none"
-        opacity="0.15"
+        opacity="0.3"
       />
       
       {/* World map outline - unified design */}
       <path
         d="M80 220 C120 200, 180 210, 220 205 C260 200, 300 215, 340 220 C380 225, 420 230, 460 235 C500 240, 540 245, 580 250 C620 255, 660 260, 700 265 C740 270, 780 275, 820 280 C860 285, 900 290, 940 295 C940 320, 920 340, 880 345 C840 350, 800 355, 760 360 C720 365, 680 370, 640 375 C600 380, 560 385, 520 390 C480 395, 440 400, 400 405 C360 410, 320 415, 280 420 C240 425, 200 430, 160 435 C120 440, 80 445, 80 420 C80 380, 80 340, 80 300 Z"
         fill="currentColor"
-        opacity="0.12"
+        opacity="0.25"
         stroke="currentColor"
         strokeWidth="0.5"
       />
       
       {/* Latitude lines */}
-      <line x1="50" y1="180" x2="950" y2="180" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
-      <line x1="50" y1="220" x2="950" y2="220" stroke="currentColor" strokeWidth="0.3" opacity="0.1" strokeDasharray="3 6" />
-      <line x1="50" y1="260" x2="950" y2="260" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
-      <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
+      <line x1="50" y1="180" x2="950" y2="180" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
+      <line x1="50" y1="220" x2="950" y2="220" stroke="currentColor" strokeWidth="0.6" opacity="0.25" strokeDasharray="3 6" />
+      <line x1="50" y1="260" x2="950" y2="260" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
+      <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
       
       {/* Longitude lines */}
-      <line x1="200" y1="150" x2="200" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
-      <line x1="350" y1="150" x2="350" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
-      <line x1="500" y1="150" x2="500" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.08" strokeDasharray="3 6" />
-      <line x1="650" y1="150" x2="650" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
-      <line x1="800" y1="150" x2="800" y2="350" stroke="currentColor" strokeWidth="0.3" opacity="0.06" strokeDasharray="3 6" />
+      <line x1="200" y1="150" x2="200" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
+      <line x1="350" y1="150" x2="350" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
+      <line x1="500" y1="150" x2="500" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.25" strokeDasharray="3 6" />
+      <line x1="650" y1="150" x2="650" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
+      <line x1="800" y1="150" x2="800" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
       
       {/* Globe-like curved projection lines */}
-      <ellipse cx="500" cy="250" rx="400" ry="100" stroke="currentColor" strokeWidth="0.4" fill="none" opacity="0.1" strokeDasharray="4 8" />
-      <ellipse cx="500" cy="250" rx="300" ry="75" stroke="currentColor" strokeWidth="0.3" fill="none" opacity="0.08" strokeDasharray="4 8" />
-      <ellipse cx="500" cy="250" rx="200" ry="50" stroke="currentColor" strokeWidth="0.3" fill="none" opacity="0.08" strokeDasharray="4 8" />
+      <ellipse cx="500" cy="250" rx="400" ry="100" stroke="currentColor" strokeWidth="0.8" fill="none" opacity="0.2" strokeDasharray="4 8" />
+      <ellipse cx="500" cy="250" rx="300" ry="75" stroke="currentColor" strokeWidth="0.6" fill="none" opacity="0.18" strokeDasharray="4 8" />
+      <ellipse cx="500" cy="250" rx="200" ry="50" stroke="currentColor" strokeWidth="0.6" fill="none" opacity="0.18" strokeDasharray="4 8" />
       
       {/* Scattered location dots representing global connectivity */}
-      <circle cx="150" cy="200" r="2" fill="currentColor" opacity="0.1" />
-      <circle cx="280" cy="230" r="2" fill="currentColor" opacity="0.1" />
-      <circle cx="420" cy="240" r="2" fill="currentColor" opacity="0.1" />
-      <circle cx="580" cy="260" r="2" fill="currentColor" opacity="0.1" />
-      <circle cx="720" cy="280" r="2" fill="currentColor" opacity="0.1" />
-      <circle cx="850" cy="300" r="2" fill="currentColor" opacity="0.1" />
+      <circle cx="150" cy="200" r="3" fill="currentColor" opacity="0.2" />
+      <circle cx="280" cy="230" r="3" fill="currentColor" opacity="0.2" />
+      <circle cx="420" cy="240" r="3" fill="currentColor" opacity="0.2" />
+      <circle cx="580" cy="260" r="3" fill="currentColor" opacity="0.2" />
+      <circle cx="720" cy="280" r="3" fill="currentColor" opacity="0.2" />
+      <circle cx="850" cy="300" r="3" fill="currentColor" opacity="0.2" />
       
       {/* Additional smaller dots */}
-      <circle cx="200" cy="270" r="1.5" fill="currentColor" opacity="0.08" />
-      <circle cx="350" cy="210" r="1.5" fill="currentColor" opacity="0.08" />
-      <circle cx="500" cy="290" r="1.5" fill="currentColor" opacity="0.08" />
-      <circle cx="650" cy="220" r="1.5" fill="currentColor" opacity="0.08" />
-      <circle cx="800" cy="270" r="1.5" fill="currentColor" opacity="0.08" />
+      <circle cx="200" cy="270" r="2" fill="currentColor" opacity="0.15" />
+      <circle cx="350" cy="210" r="2" fill="currentColor" opacity="0.15" />
+      <circle cx="500" cy="290" r="2" fill="currentColor" opacity="0.15" />
+      <circle cx="650" cy="220" r="2" fill="currentColor" opacity="0.15" />
+      <circle cx="800" cy="270" r="2" fill="currentColor" opacity="0.15" />
     </svg>
   </div>
 );
