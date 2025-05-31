@@ -3,39 +3,90 @@
 export const WorldMapPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute top-0 left-0 w-full h-full opacity-[0.03]"
-      viewBox="0 0 1200 800"
+      className="absolute top-0 left-0 w-full h-full opacity-[0.04]"
+      viewBox="0 0 1000 600"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Simplified world map outline */}
+      {/* North America */}
       <path
-        d="M200 300C220 280 280 260 350 280C420 300 480 320 550 300C620 280 680 290 750 310C820 330 880 320 950 340C1000 350 1050 360 1100 350"
+        d="M50 150 Q80 120 120 140 Q160 130 200 150 Q220 160 200 200 Q180 220 150 210 Q100 200 80 180 Q60 170 50 150 Z"
+        fill="currentColor"
+        opacity="0.06"
         stroke="currentColor"
-        strokeWidth="1"
-        fill="none"
-        opacity="0.5"
+        strokeWidth="0.5"
       />
+      
+      {/* South America */}
       <path
-        d="M150 350C200 370 300 360 400 380C500 400 600 390 700 410C800 430 900 420 1000 440"
+        d="M150 280 Q170 270 180 300 Q185 340 175 380 Q170 420 160 450 Q150 470 140 450 Q130 420 135 380 Q140 340 145 300 Q148 280 150 280 Z"
+        fill="currentColor"
+        opacity="0.05"
         stroke="currentColor"
-        strokeWidth="1"
-        fill="none"
+        strokeWidth="0.5"
+      />
+      
+      {/* Europe */}
+      <path
+        d="M450 120 Q480 110 510 125 Q530 135 525 155 Q520 175 500 170 Q470 165 450 155 Q440 145 450 120 Z"
+        fill="currentColor"
+        opacity="0.06"
+        stroke="currentColor"
+        strokeWidth="0.5"
+      />
+      
+      {/* Africa */}
+      <path
+        d="M420 180 Q450 170 480 185 Q500 200 495 240 Q490 280 485 320 Q480 360 470 390 Q460 410 450 395 Q440 370 445 330 Q450 290 455 250 Q460 210 450 190 Q445 180 420 180 Z"
+        fill="currentColor"
+        opacity="0.05"
+        stroke="currentColor"
+        strokeWidth="0.5"
+      />
+      
+      {/* Asia */}
+      <path
+        d="M550 100 Q620 90 690 110 Q750 130 780 150 Q800 170 790 200 Q780 230 750 220 Q700 210 650 200 Q600 190 570 180 Q540 160 545 130 Q548 110 550 100 Z"
+        fill="currentColor"
+        opacity="0.06"
+        stroke="currentColor"
+        strokeWidth="0.5"
+      />
+      
+      {/* Australia */}
+      <path
+        d="M700 380 Q730 375 760 385 Q780 395 775 415 Q770 435 750 430 Q720 425 700 415 Q690 405 695 390 Q698 380 700 380 Z"
+        fill="currentColor"
+        opacity="0.05"
+        stroke="currentColor"
+        strokeWidth="0.5"
+      />
+      
+      {/* Connection lines between continents */}
+      <path
+        d="M220 170 Q300 160 420 150"
+        stroke="currentColor"
+        strokeWidth="0.5"
+        strokeDasharray="2 4"
         opacity="0.3"
+        fill="none"
       />
       <path
-        d="M100 400C180 420 260 410 340 430C420 450 500 440 580 460C660 480 740 470 820 490C900 510 980 500 1060 520"
+        d="M530 140 Q600 135 680 130"
         stroke="currentColor"
-        strokeWidth="1"
+        strokeWidth="0.5"
+        strokeDasharray="2 4"
+        opacity="0.3"
         fill="none"
-        opacity="0.4"
       />
-      {/* Continents as simple shapes */}
-      <circle cx="300" cy="300" r="40" fill="currentColor" opacity="0.02" />
-      <circle cx="600" cy="320" r="60" fill="currentColor" opacity="0.02" />
-      <circle cx="900" cy="340" r="50" fill="currentColor" opacity="0.02" />
-      <circle cx="400" cy="450" r="35" fill="currentColor" opacity="0.02" />
-      <circle cx="750" cy="480" r="45" fill="currentColor" opacity="0.02" />
+      <path
+        d="M480 200 Q520 195 560 190"
+        stroke="currentColor"
+        strokeWidth="0.5"
+        strokeDasharray="2 4"
+        opacity="0.3"
+        fill="none"
+      />
     </svg>
   </div>
 );
@@ -122,35 +173,61 @@ export const TravelPathPattern = () => (
 export const PassportStampPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute inset-0 w-full h-full opacity-[0.02]"
-      viewBox="0 0 800 600"
+      className="absolute inset-0 w-full h-full opacity-[0.04]"
+      viewBox="0 0 1000 600"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Passport stamps scattered */}
-      <g transform="rotate(15 200 150)">
-        <rect x="180" y="130" width="40" height="40" rx="2" stroke="currentColor" strokeWidth="1" fill="none" />
-        <circle cx="200" cy="150" r="15" stroke="currentColor" strokeWidth="1" fill="none" />
-        <text x="200" y="155" textAnchor="middle" fontSize="6" fill="currentColor">QR</text>
-      </g>
+      {/* World map silhouette for Refer & Earn section */}
+      {/* Americas */}
+      <path
+        d="M100 180 Q130 160 160 180 Q180 200 170 240 Q160 280 150 320 Q140 360 130 390 Q120 410 110 390 Q100 360 105 320 Q110 280 115 240 Q120 200 100 180 Z"
+        fill="currentColor"
+        opacity="0.03"
+        stroke="currentColor"
+        strokeWidth="0.3"
+      />
       
-      <g transform="rotate(-20 600 200)">
-        <rect x="580" y="180" width="40" height="40" rx="2" stroke="currentColor" strokeWidth="1" fill="none" />
-        <circle cx="600" cy="200" r="15" stroke="currentColor" strokeWidth="1" fill="none" />
-        <text x="600" y="205" textAnchor="middle" fontSize="6" fill="currentColor">LOCAL</text>
-      </g>
+      {/* Europe & Africa */}
+      <path
+        d="M400 150 Q430 140 460 155 Q480 170 475 200 Q470 230 465 260 Q460 290 455 320 Q450 350 440 370 Q430 380 420 365 Q410 340 415 310 Q420 280 425 250 Q430 220 425 190 Q420 170 400 150 Z"
+        fill="currentColor"
+        opacity="0.04"
+        stroke="currentColor"
+        strokeWidth="0.3"
+      />
       
-      <g transform="rotate(25 150 400)">
-        <rect x="130" y="380" width="40" height="40" rx="2" stroke="currentColor" strokeWidth="1" fill="none" />
-        <circle cx="150" cy="400" r="15" stroke="currentColor" strokeWidth="1" fill="none" />
-        <text x="150" y="405" textAnchor="middle" fontSize="6" fill="currentColor">TRAVEL</text>
-      </g>
+      {/* Asia & Australia */}
+      <path
+        d="M650 120 Q720 110 780 130 Q820 150 810 180 Q800 210 790 240 Q780 270 770 300 Q760 330 750 350 Q740 360 730 345 Q720 320 725 290 Q730 260 735 230 Q740 200 735 170 Q730 150 720 140 Q700 130 680 125 Q665 120 650 120 Z"
+        fill="currentColor"
+        opacity="0.03"
+        stroke="currentColor"
+        strokeWidth="0.3"
+      />
       
-      <g transform="rotate(-10 700 450)">
-        <rect x="680" y="430" width="40" height="40" rx="2" stroke="currentColor" strokeWidth="1" fill="none" />
-        <circle cx="700" cy="450" r="15" stroke="currentColor" strokeWidth="1" fill="none" />
-        <text x="700" y="455" textAnchor="middle" fontSize="6" fill="currentColor">DISCOVER</text>
-      </g>
+      {/* Small islands and connections */}
+      <circle cx="250" cy="280" r="8" fill="currentColor" opacity="0.02" />
+      <circle cx="550" cy="350" r="12" fill="currentColor" opacity="0.02" />
+      <circle cx="750" cy="380" r="15" fill="currentColor" opacity="0.03" />
+      
+      {/* Dotted travel routes */}
+      <path
+        d="M180 200 Q300 190 420 180"
+        stroke="currentColor"
+        strokeWidth="0.5"
+        strokeDasharray="1 3"
+        opacity="0.25"
+        fill="none"
+      />
+      <path
+        d="M480 170 Q580 160 680 150"
+        stroke="currentColor"
+        strokeWidth="0.5"
+        strokeDasharray="1 3"
+        opacity="0.25"
+        fill="none"
+      />
     </svg>
   </div>
 );
