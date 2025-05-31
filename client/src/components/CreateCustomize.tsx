@@ -8,7 +8,7 @@ export default function CreateCustomize() {
   const { content } = useLanguage();
 
   return (
-    <section id="how-it-works" className="bg-off-white py-20">
+    <section id="how-it-works" className="py-20" style={{ backgroundColor: 'hsl(var(--soft-off-white))' }}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

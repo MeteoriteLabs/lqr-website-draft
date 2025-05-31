@@ -25,7 +25,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="bg-evergreen animated-gradient relative overflow-hidden min-h-screen flex items-center">
+    <section id="hero" className="relative overflow-hidden min-h-screen flex items-center" style={{ backgroundColor: 'hsl(var(--evergreen))' }}>
       
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -63,7 +63,8 @@ export default function Hero() {
                     placeholder={content.hero.inputPlaceholder}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue py-[10px] px-3 h-auto input-animated"
+                    className="flex-1 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg placeholder-gray-400 py-[10px] px-3 h-auto input-animated text-gray-900 border-gray-300"
+                    style={{ backgroundColor: 'hsl(var(--light-gray))' }}
                     onKeyPress={(e) => e.key === 'Enter' && handleClaimQR()}
                   />
                 </div>
@@ -79,7 +80,8 @@ export default function Hero() {
                   onClick={handleClaimQR}
                   disabled={!username.trim() || isLoading}
                   size="lg"
-                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg btn-animated ripple-effect"
+                  className="w-full lg:w-auto font-semibold text-lg btn-animated ripple-effect text-white hover:opacity-90"
+                  style={{ backgroundColor: 'hsl(var(--blue-cta))' }}
                 >
                   {isLoading ? (
                     <span className="flex items-center gap-2">

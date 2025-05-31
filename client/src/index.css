@@ -154,17 +154,21 @@ html {
   --ring: 20 14.3% 4.1%;
   --radius: 0.5rem;
 
-  /* LocalQR Custom Colors */
+  /* Travel-inspired color palette */
   --evergreen: 107 48% 16%; /* #1B3B1A */
-  --clay-brown: 22 41% 21%; /* #4B2E1D */
-  --deep-blue: 220 41% 21%; /* #1A2B49 */
-  --maroon-red: 0 48% 19%; /* #471919 */
-  --charcoal: 0 0% 18%; /* #2E2E2E */
-  --charcoal-dark: 0 0% 7%; /* #121212 */
-  --off-white: 60 14% 98%; /* #FAFAF7 */
-  --mint-grey: 100 14% 96%; /* #F5F8F3 */
-  --light-grey: 120 7% 90%; /* #E6ECE6 */
-  --cta-blue: 220 100% 50%; /* #0066FF */
+  --light-evergreen: 107 35% 26%; /* #375C3B */
+  --soft-off-white: 60 14% 98%; /* #F9F9F6 */
+  --warm-beige: 39 29% 94%; /* #F3EFE5 */
+  --cool-mist: 195 28% 91%; /* #E3EEF1 */
+  --clay-tone: 22 28% 91%; /* #EFE7E2 */
+  --charcoal: 220 13% 18%; /* #1F2937 */
+  --deep-charcoal: 0 0% 10%; /* #1A1A1A */
+  --light-gray: 214 32% 97%; /* #F3F4F6 */
+  --amber: 37 91% 50%; /* #F59E0B */
+  --blue-cta: 218 91% 60%; /* #3B82F6 */
+  --blue-final: 221 83% 53%; /* #2563EB */
+  --text-light: 219 14% 82%; /* #D1D5DB */
+  --hover-blue: 214 88% 68%; /* #60A5FA */
 }
 
 .dark {
