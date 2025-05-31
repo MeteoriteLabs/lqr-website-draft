@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { WorldOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
+import { Button } from '@/components/ui/button';
 
 export default function FinalCTA() {
   const [isLoading, setIsLoading] = useState(false);
@@ -64,15 +65,19 @@ export default function FinalCTA() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <motion.button
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleClaim}
-                disabled={isLoading}
-                className="bg-white text-cta-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-200 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isLoading ? 'Creating your LocalQR...' : content.sections.finalCTA.ctaButton}
-              </motion.button>
+                <Button
+                  onClick={handleClaim}
+                  disabled={isLoading}
+                  size="lg"
+                  className="bg-white text-cta-blue hover:bg-gray-100 font-bold text-lg shadow-xl"
+                >
+                  {isLoading ? 'Creating your LocalQR...' : content.sections.finalCTA.ctaButton}
+                </Button>
+              </motion.div>
               <p className="text-blue-100 text-sm mt-3">
                 {content.sections.finalCTA.disclaimer}
               </p>
