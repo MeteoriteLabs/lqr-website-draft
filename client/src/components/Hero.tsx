@@ -25,7 +25,6 @@ export default function Hero() {
 
   return (
     <section id="hero" className="bg-evergreen relative overflow-hidden min-h-screen flex items-center">
-      <WorldMapPattern />
       
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
