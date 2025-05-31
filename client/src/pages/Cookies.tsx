@@ -2,9 +2,14 @@ import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useEffect } from 'react';
 
 export default function Cookies() {
   const { content } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleGoHome = () => {
     window.location.href = '/';
