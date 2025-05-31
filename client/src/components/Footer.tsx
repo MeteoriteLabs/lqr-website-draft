@@ -108,6 +108,14 @@ export default function Footer() {
               >
                 {content.footer.links.privacy}
               </a>
+              <a
+                href="/cookies"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-400 hover:text-white transition-colors"
+              >
+                {content.footer.links.cookies}
+              </a>
             </div>
           </div>
         </div>

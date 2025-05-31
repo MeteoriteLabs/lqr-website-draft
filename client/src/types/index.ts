@@ -99,6 +99,7 @@ export interface LanguageContent {
       contact: string;
       terms: string;
       privacy: string;
+      cookies: string;
     };
     copyright: string;
   };

@@ -66,7 +66,7 @@ const content: Record<string, LanguageContent> = {
       },
     },
     footer: {
-      tagline: 'Your favorite places. One simple link.',
+      tagline: 'Let your recommendations travel the world.',
       email: 'hello@localqr.earth',
       sections: {
         product: 'Product',
@@ -79,6 +79,7 @@ const content: Record<string, LanguageContent> = {
         contact: 'Contact',
         terms: 'Terms & Conditions',
         privacy: 'Privacy Policy',
+        cookies: 'Cookie Policy',
       },
       copyright: '© 2024 LocalQR. All rights reserved.',
     },
@@ -141,7 +142,7 @@ const content: Record<string, LanguageContent> = {
       },
     },
     footer: {
-      tagline: 'Tus lugares favoritos. Un enlace simple.',
+      tagline: 'Deja que tus recomendaciones viajen por el mundo.',
       email: 'hello@localqr.earth',
       sections: {
         product: 'Producto',
@@ -154,6 +155,7 @@ const content: Record<string, LanguageContent> = {
         contact: 'Contacto',
         terms: 'Términos y Condiciones',
         privacy: 'Política de Privacidad',
+        cookies: 'Política de Cookies',
       },
       copyright: '© 2024 LocalQR. Todos los derechos reservados.',
     },
@@ -216,7 +218,7 @@ const content: Record<string, LanguageContent> = {
       },
     },
     footer: {
-      tagline: 'Vos lieux favoris. Un lien simple.',
+      tagline: 'Laissez vos recommandations voyager à travers le monde.',
       email: 'hello@localqr.earth',
       sections: {
         product: 'Produit',
@@ -229,6 +231,7 @@ const content: Record<string, LanguageContent> = {
         contact: 'Contact',
         terms: 'Termes et Conditions',
         privacy: 'Politique de Confidentialité',
+        cookies: 'Politique des Cookies',
       },
       copyright: '© 2024 LocalQR. Tous droits réservés.',
     },
