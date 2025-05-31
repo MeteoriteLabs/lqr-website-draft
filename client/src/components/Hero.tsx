@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CompassOverlay } from './SVGOverlays';
-import { WorldMapPattern, CompassPattern } from './BackgroundPatterns';
+import { WorldMapPattern } from './BackgroundPatterns';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -27,7 +27,6 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-evergreen relative overflow-hidden min-h-screen flex items-center">
       <WorldMapPattern />
-      <CompassPattern />
       <CompassOverlay />
       
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
