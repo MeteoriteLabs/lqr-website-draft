@@ -64,7 +64,7 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 ## 🎨 Design Features
 
 - **Multi-language Support**: English, Spanish, and French translations
-- **Responsive Design**: Mobile-first approach with breakpoints for all devices
+- **Responsive Design**: Mobile-first approach optimized for all screen sizes (320px+)
 - **Dark/Light Sections**: Modular color-coded sections following brand guidelines
 - **Smooth Animations**: Framer Motion powered scroll animations and hover effects
 - **Custom Color Palette**: Brand-specific colors including Evergreen, Clay Brown, Deep Blue, Maroon Red
@@ -99,8 +99,8 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ installed on your machine
-- npm or yarn package manager
+- Node.js 20.18.1+ (recommended) installed on your machine
+- npm 10.8.2+ or yarn package manager
 
 ### Step-by-Step Setup
 

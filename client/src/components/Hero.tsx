@@ -33,10 +33,10 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-white space-y-8"
           >
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
               {content.hero.headline}
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed">
               {content.hero.subtext}
             </p>
             
@@ -51,8 +51,8 @@ export default function Hero() {
                 <label className="block text-sm font-medium mb-3">
                   {content.hero.inputLabel}
                 </label>
-                <div className="flex">
-                  <span className="inline-flex items-center px-4 py-3 bg-white/20 border border-r-0 border-white/30 rounded-l-lg text-sm">
+                <div className="flex flex-col sm:flex-row">
+                  <span className="inline-flex items-center px-4 py-3 bg-white/20 border border-white/30 sm:border-r-0 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-sm whitespace-nowrap">
                     localqr.earth/
                   </span>
                   <input 
@@ -60,7 +60,7 @@ export default function Hero() {
                     placeholder={content.hero.inputPlaceholder}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="flex-1 px-4 py-3 bg-white/10 border border-white/30 rounded-r-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cta-blue focus:border-transparent"
+                    className="flex-1 px-4 py-3 bg-white/10 border border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cta-blue focus:border-transparent"
                     onKeyPress={(e) => e.key === 'Enter' && handleClaimQR()}
                   />
                 </div>
