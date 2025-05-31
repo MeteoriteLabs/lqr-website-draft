@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link, Printer, BookOpen } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function ShareAnywhere() {
@@ -86,7 +87,7 @@ export default function ShareAnywhere() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-blue-400 text-xl">🔗</span>
+                <Link className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">Add to your Instagram bio</h4>
                   <p className="text-gray-300">Share with your followers instantly</p>
@@ -100,7 +101,7 @@ export default function ShareAnywhere() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-blue-400 text-xl">🖨️</span>
+                <Printer className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">Print it on menus</h4>
                   <p className="text-gray-300">Physical touchpoints made easy</p>
@@ -114,7 +115,7 @@ export default function ShareAnywhere() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-blue-400 text-xl">📚</span>
+                <BookOpen className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">Include in welcome books</h4>
                   <p className="text-gray-300">Perfect for hosts and guides</p>
