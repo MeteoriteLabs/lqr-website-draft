@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Coins, Info, DollarSign, Sprout, Gift } from 'lucide-react';
-import { BadgeOverlay } from './SVGOverlays';
 import { PassportStampPattern } from './BackgroundPatterns';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -10,7 +9,6 @@ export default function ReferEarn() {
   return (
     <section className="bg-maroon-red py-20 relative overflow-hidden">
       <PassportStampPattern />
-      <BadgeOverlay />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
