@@ -3,61 +3,65 @@
 export const WorldMapPattern = () => (
   <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
     <svg
-      className="absolute top-0 left-0 w-full h-full opacity-[0.2]"
-      viewBox="0 0 1000 500"
+      className="absolute top-4 right-4 w-96 h-96 opacity-[0.12]"
+      viewBox="0 0 400 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Global world map silhouette */}
+      {/* Earth circle */}
+      <circle cx="200" cy="200" r="180" fill="currentColor" opacity="0.08" stroke="currentColor" strokeWidth="1" />
+      
+      {/* Continent silhouettes on the earth */}
+      {/* North America */}
       <path
-        d="M100 200 Q120 180 150 190 Q180 185 210 195 Q240 200 270 210 Q300 205 330 215 Q360 220 390 225 Q420 230 450 235 Q480 240 510 245 Q540 250 570 255 Q600 260 630 265 Q660 270 690 275 Q720 280 750 285 Q780 290 810 295 Q840 300 870 305 Q900 310 930 315"
-        stroke="currentColor"
-        strokeWidth="1"
-        fill="none"
-        opacity="0.3"
+        d="M80 160 Q100 140 130 150 Q150 145 170 155 Q185 160 180 180 Q175 200 165 195 Q145 190 125 185 Q105 180 85 175 Q75 170 80 160 Z"
+        fill="white"
+        opacity="0.4"
       />
       
-      {/* World map outline - unified design */}
+      {/* South America */}
       <path
-        d="M80 220 C120 200, 180 210, 220 205 C260 200, 300 215, 340 220 C380 225, 420 230, 460 235 C500 240, 540 245, 580 250 C620 255, 660 260, 700 265 C740 270, 780 275, 820 280 C860 285, 900 290, 940 295 C940 320, 920 340, 880 345 C840 350, 800 355, 760 360 C720 365, 680 370, 640 375 C600 380, 560 385, 520 390 C480 395, 440 400, 400 405 C360 410, 320 415, 280 420 C240 425, 200 430, 160 435 C120 440, 80 445, 80 420 C80 380, 80 340, 80 300 Z"
-        fill="currentColor"
-        opacity="0.25"
-        stroke="currentColor"
-        strokeWidth="0.5"
+        d="M140 220 Q145 210 150 230 Q152 250 150 270 Q148 290 145 300 Q142 310 140 300 Q138 280 140 260 Q142 240 140 220 Z"
+        fill="white"
+        opacity="0.4"
       />
       
-      {/* Latitude lines */}
-      <line x1="50" y1="180" x2="950" y2="180" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
-      <line x1="50" y1="220" x2="950" y2="220" stroke="currentColor" strokeWidth="0.6" opacity="0.25" strokeDasharray="3 6" />
-      <line x1="50" y1="260" x2="950" y2="260" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
-      <line x1="50" y1="300" x2="950" y2="300" stroke="currentColor" strokeWidth="0.6" opacity="0.2" strokeDasharray="3 6" />
+      {/* Europe */}
+      <path
+        d="M220 140 Q230 135 240 142 Q250 148 245 158 Q240 168 235 163 Q225 158 220 153 Q215 148 220 140 Z"
+        fill="white"
+        opacity="0.4"
+      />
       
-      {/* Longitude lines */}
-      <line x1="200" y1="150" x2="200" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
-      <line x1="350" y1="150" x2="350" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
-      <line x1="500" y1="150" x2="500" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.25" strokeDasharray="3 6" />
-      <line x1="650" y1="150" x2="650" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
-      <line x1="800" y1="150" x2="800" y2="350" stroke="currentColor" strokeWidth="0.6" opacity="0.18" strokeDasharray="3 6" />
+      {/* Africa */}
+      <path
+        d="M210 170 Q220 165 230 175 Q235 185 232 200 Q230 220 228 240 Q225 260 220 270 Q215 275 212 265 Q210 245 212 225 Q214 205 212 185 Q210 175 210 170 Z"
+        fill="white"
+        opacity="0.4"
+      />
       
-      {/* Globe-like curved projection lines */}
-      <ellipse cx="500" cy="250" rx="400" ry="100" stroke="currentColor" strokeWidth="0.8" fill="none" opacity="0.2" strokeDasharray="4 8" />
-      <ellipse cx="500" cy="250" rx="300" ry="75" stroke="currentColor" strokeWidth="0.6" fill="none" opacity="0.18" strokeDasharray="4 8" />
-      <ellipse cx="500" cy="250" rx="200" ry="50" stroke="currentColor" strokeWidth="0.6" fill="none" opacity="0.18" strokeDasharray="4 8" />
+      {/* Asia */}
+      <path
+        d="M250 150 Q280 145 310 155 Q330 165 325 185 Q320 205 310 200 Q290 195 270 190 Q250 185 245 175 Q248 165 250 150 Z"
+        fill="white"
+        opacity="0.4"
+      />
       
-      {/* Scattered location dots representing global connectivity */}
-      <circle cx="150" cy="200" r="3" fill="currentColor" opacity="0.2" />
-      <circle cx="280" cy="230" r="3" fill="currentColor" opacity="0.2" />
-      <circle cx="420" cy="240" r="3" fill="currentColor" opacity="0.2" />
-      <circle cx="580" cy="260" r="3" fill="currentColor" opacity="0.2" />
-      <circle cx="720" cy="280" r="3" fill="currentColor" opacity="0.2" />
-      <circle cx="850" cy="300" r="3" fill="currentColor" opacity="0.2" />
+      {/* Australia */}
+      <path
+        d="M280 260 Q300 255 315 265 Q325 275 320 285 Q315 295 305 290 Q290 285 280 280 Q275 275 280 260 Z"
+        fill="white"
+        opacity="0.4"
+      />
       
-      {/* Additional smaller dots */}
-      <circle cx="200" cy="270" r="2" fill="currentColor" opacity="0.15" />
-      <circle cx="350" cy="210" r="2" fill="currentColor" opacity="0.15" />
-      <circle cx="500" cy="290" r="2" fill="currentColor" opacity="0.15" />
-      <circle cx="650" cy="220" r="2" fill="currentColor" opacity="0.15" />
-      <circle cx="800" cy="270" r="2" fill="currentColor" opacity="0.15" />
+      {/* Grid lines on the earth */}
+      <ellipse cx="200" cy="200" rx="180" ry="90" stroke="white" strokeWidth="0.5" fill="none" opacity="0.2" strokeDasharray="3 6" />
+      <ellipse cx="200" cy="200" rx="180" ry="60" stroke="white" strokeWidth="0.5" fill="none" opacity="0.15" strokeDasharray="3 6" />
+      <ellipse cx="200" cy="200" rx="90" ry="180" stroke="white" strokeWidth="0.5" fill="none" opacity="0.2" strokeDasharray="3 6" />
+      <ellipse cx="200" cy="200" rx="60" ry="180" stroke="white" strokeWidth="0.5" fill="none" opacity="0.15" strokeDasharray="3 6" />
+      
+      {/* Equator line */}
+      <line x1="20" y1="200" x2="380" y2="200" stroke="white" strokeWidth="0.8" opacity="0.25" strokeDasharray="4 8" />
     </svg>
   </div>
 );
