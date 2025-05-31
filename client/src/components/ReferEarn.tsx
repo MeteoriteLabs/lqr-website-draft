@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Coins, Info } from 'lucide-react';
+import { Coins, Info, DollarSign, Sprout, Gift } from 'lucide-react';
 import { BadgeOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -75,7 +75,7 @@ export default function ReferEarn() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-yellow-400 text-xl">💰</span>
+                <DollarSign className="text-yellow-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">Turn recommendations into passive rewards</h4>
                 </div>
@@ -88,7 +88,7 @@ export default function ReferEarn() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-yellow-400 text-xl">🌱</span>
+                <Sprout className="text-yellow-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">Build your network and earn automatically</h4>
                 </div>
@@ -101,7 +101,7 @@ export default function ReferEarn() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-yellow-400 text-xl">🎁</span>
+                <Gift className="text-yellow-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">{content.sections.referEarn.comingSoon}</h4>
                 </div>
