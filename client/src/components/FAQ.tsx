@@ -40,8 +40,8 @@ export default function FAQ() {
   const { content } = useLanguage();
 
   return (
-    <section id="faq" className="py-20" style={{ backgroundColor: 'hsl(var(--light-gray))' }}>
-      <div className="container mx-auto px-4 lg:px-8">
+    <section id="faq" className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: 'hsl(var(--light-gray))' }}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,10 +49,10 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-4 sm:mb-6">
             {content.sections.faq.headline}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             {content.sections.faq.subtext}
           </p>
         </motion.div>
