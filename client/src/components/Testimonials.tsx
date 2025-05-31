@@ -94,7 +94,7 @@ export default function Testimonials() {
                   hover: { duration: 0.2 }
                 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl p-6 min-w-[320px] flex-shrink-0 shadow-lg"
+                className="bg-white rounded-xl p-4 sm:p-6 min-w-[280px] sm:min-w-[320px] flex-shrink-0 shadow-lg"
               >
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">

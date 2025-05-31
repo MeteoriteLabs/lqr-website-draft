@@ -18,10 +18,10 @@ export default function CreateCustomize() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-3xl lg:text-5xl font-bold text-charcoal leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-charcoal leading-tight">
               {content.sections.createCustomize.headline}
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
               {content.sections.createCustomize.subtext}
             </p>
             

@@ -71,17 +71,32 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 - **SVG Overlays**: Decorative background patterns for visual character
 - **Accessibility**: WCAG AA+ compliant with proper focus states and contrast ratios
 
+## 📱 Responsive Design
+
+### Breakpoints
+- **Mobile**: 320px - 640px (base styles, sm)
+- **Tablet**: 640px - 1024px (md, lg)  
+- **Desktop**: 1024px+ (xl, 2xl)
+
+### Mobile Optimizations
+- Stacked form layouts on small screens
+- Touch-friendly button sizes (44px minimum)
+- Optimized typography scaling
+- Horizontal scroll for testimonials
+- Collapsible navigation menu
+- Adjusted spacing and padding for mobile
+
 ## 📦 Dependencies
 
 ### Core Dependencies
-- `react` & `react-dom`: React 18 framework
-- `typescript`: Type safety and better development experience
-- `vite`: Fast build tool and development server
-- `express`: Minimal backend web framework for health checks
-- `framer-motion`: Animation library
-- `wouter`: Lightweight React router
-- `@tanstack/react-query`: Server state management
-- `tailwindcss`: Utility-first CSS framework
+- `react` (^18.3.1) & `react-dom` (^18.3.1): React 18 framework
+- `typescript` (5.6.3): Type safety and better development experience
+- `vite` (^5.4.14): Fast build tool and development server
+- `express` (^4.21.2): Minimal backend web framework for health checks
+- `framer-motion` (^11.13.1): Animation library
+- `wouter` (^3.3.5): Lightweight React router
+- `@tanstack/react-query` (^5.60.5): Server state management
+- `tailwindcss` (^3.4.17): Utility-first CSS framework
 
 ### UI Components
 - `@radix-ui/*`: Accessible UI primitives

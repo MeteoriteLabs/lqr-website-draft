@@ -76,7 +76,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => toggleItem(item.id)}
-                className="w-full px-6 py-4 text-left font-semibold text-charcoal hover:bg-gray-50 transition-colors flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-cta-blue focus:ring-inset"
+                className="w-full px-4 sm:px-6 py-4 text-left font-semibold text-charcoal hover:bg-gray-50 transition-colors flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-cta-blue focus:ring-inset"
                 aria-expanded={openItems.has(item.id)}
                 aria-controls={`faq-content-${item.id}`}
               >
