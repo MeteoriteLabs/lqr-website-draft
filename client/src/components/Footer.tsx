@@ -1,4 +1,5 @@
 import { QrCode, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Link } from 'wouter';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function Footer() {
@@ -92,30 +93,24 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-white">{content.footer.sections.legal}</h3>
             <div className="space-y-2">
-              <a
+              <Link
                 href="/terms"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
                 {content.footer.links.terms}
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
                 {content.footer.links.privacy}
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cookies"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
                 {content.footer.links.cookies}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
