@@ -7,6 +7,7 @@ import { Link, useLocation } from 'wouter';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
   const { currentLanguage, languages, content, isDropdownOpen, changeLanguage, toggleDropdown, setIsDropdownOpen } = useLanguage();
 
   useEffect(() => {
@@ -28,6 +29,12 @@ export default function Header() {
   }, [setIsDropdownOpen]);
 
   const scrollToSection = (sectionId: string) => {
+    // If we're not on the home page, navigate to home first
+    if (location !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -35,12 +42,15 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  // Check if we're on a non-home page to always show background
+  const isNonHomePage = location !== '/';
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        isScrolled || isNonHomePage ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,7 +64,7 @@ export default function Header() {
               <QrCode className="text-white" size={16} />
             </div>
             <span className={`text-xl font-bold transition-colors ${
-              isScrolled ? 'text-charcoal' : 'text-white'
+              isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
             }`}>
               LocalQR
             </span>
@@ -65,7 +75,7 @@ export default function Header() {
             <button
               onClick={() => scrollToSection('how-it-works')}
               className={`transition-colors hover:opacity-75 ${
-                isScrolled ? 'text-charcoal' : 'text-white'
+                isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
               }`}
             >
               {content.header.nav.howItWorks}
@@ -73,7 +83,7 @@ export default function Header() {
             <button
               onClick={() => scrollToSection('who-is-for')}
               className={`transition-colors hover:opacity-75 ${
-                isScrolled ? 'text-charcoal' : 'text-white'
+                isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
               }`}
             >
               {content.header.nav.whoIsFor}
@@ -81,7 +91,7 @@ export default function Header() {
             <button
               onClick={() => scrollToSection('faq')}
               className={`transition-colors hover:opacity-75 ${
-                isScrolled ? 'text-charcoal' : 'text-white'
+                isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
               }`}
             >
               {content.header.nav.faq}
@@ -89,7 +99,7 @@ export default function Header() {
             <Link
               href="/contact"
               className={`transition-colors hover:opacity-75 ${
-                isScrolled ? 'text-charcoal' : 'text-white'
+                isScrolled || isNonHomePage ? 'text-charcoal' : 'text-white'
               }`}
             >
               {content.header.nav.contact}
