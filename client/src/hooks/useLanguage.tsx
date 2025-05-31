@@ -23,7 +23,7 @@ const content: Record<string, LanguageContent> = {
     },
     hero: {
       headline: 'All your recommendations in one simple QR and link.',
-      subtext: 'Turn your knowledge of a place into a shareable guide — engage your followers, customers, travelers, and friends alike.',
+      subtext: 'Share what you know and love about a place — and make it discoverable by everyone, everywhere',
       inputLabel: 'Claim your LocalQR URL:',
       inputPlaceholder: 'yourname',
       ctaButton: 'Claim Your LocalQR',
