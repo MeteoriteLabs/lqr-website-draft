@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Remove default focus outlines and add custom focus styles */
+* {
+  outline: none !important;
+}
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Custom focus styles for better UX */
+button:focus-visible {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+a:focus-visible {
+  color: rgba(59, 130, 246, 0.8);
+  transition: color 0.2s ease;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;
