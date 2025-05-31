@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <footer className="py-16 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--deep-charcoal))' }}>
       <GlobePattern />
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
