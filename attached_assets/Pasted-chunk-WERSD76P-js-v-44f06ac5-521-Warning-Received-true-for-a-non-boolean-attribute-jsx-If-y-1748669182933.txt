@@ -1,0 +1,32 @@
+chunk-WERSD76P.js?v=44f06ac5:521 Warning: Received `true` for a non-boolean attribute `jsx`.
+
+If you want to write it to the DOM, pass a string instead: jsx="true" or jsx={value.toString()}.
+    at style
+    at section
+    at Testimonials (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/src/components/Testimonials.tsx:62:23)
+    at div
+    at Home
+    at Route (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0f9eba6e:323:16)
+    at Switch (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0f9eba6e:379:17)
+    at Router
+    at Provider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-532U4VYK.js?v=44f06ac5:72:15)
+    at TooltipProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=21e17254:2247:5)
+    at QueryClientProvider (https://d8b76854-5a83-4384-a109-d0334c476cb6-00-2pxp9vse86da3.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=cbef7d30:2805:3)
+    at App
+printWarning @ chunk-WERSD76P.js?v=44f06ac5:521
+error @ chunk-WERSD76P.js?v=44f06ac5:505
+validateProperty$1 @ chunk-WERSD76P.js?v=44f06ac5:3433
+warnUnknownProperties @ chunk-WERSD76P.js?v=44f06ac5:3459
+validateProperties$2 @ chunk-WERSD76P.js?v=44f06ac5:3478
+validatePropertiesInDevelopment @ chunk-WERSD76P.js?v=44f06ac5:7346
+setInitialProperties @ chunk-WERSD76P.js?v=44f06ac5:7535
+finalizeInitialChildren @ chunk-WERSD76P.js?v=44f06ac5:8345
+completeWork @ chunk-WERSD76P.js?v=44f06ac5:16293
+completeUnitOfWork @ chunk-WERSD76P.js?v=44f06ac5:19224
+performUnitOfWork @ chunk-WERSD76P.js?v=44f06ac5:19206
+workLoopSync @ chunk-WERSD76P.js?v=44f06ac5:19137
+renderRootSync @ chunk-WERSD76P.js?v=44f06ac5:19116
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=44f06ac5:18678
+workLoop @ chunk-WERSD76P.js?v=44f06ac5:197
+flushWork @ chunk-WERSD76P.js?v=44f06ac5:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=44f06ac5:384

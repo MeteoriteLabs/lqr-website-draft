@@ -51,12 +51,9 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 ├── server/                # Backend Express application
 │   ├── index.ts          # Server entry point
 │   ├── routes.ts         # API routes
-│   ├── storage.ts        # Database storage interface
+│   ├── storage.ts        # Simple storage interface (no database)
 │   └── vite.ts           # Vite development server setup
-├── shared/               # Shared code between client and server
-│   └── schema.ts         # Database schema definitions
 ├── components.json       # shadcn/ui configuration
-├── drizzle.config.ts     # Drizzle ORM configuration
 ├── package.json          # Dependencies and scripts
 ├── postcss.config.js     # PostCSS configuration
 ├── tailwind.config.ts    # Tailwind CSS configuration
@@ -80,13 +77,11 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 - `react` & `react-dom`: React 18 framework
 - `typescript`: Type safety and better development experience
 - `vite`: Fast build tool and development server
-- `express`: Backend web framework
+- `express`: Minimal backend web framework for health checks
 - `framer-motion`: Animation library
 - `wouter`: Lightweight React router
 - `@tanstack/react-query`: Server state management
 - `tailwindcss`: Utility-first CSS framework
-- `drizzle-orm`: Type-safe SQL toolkit
-- `@neondatabase/serverless`: PostgreSQL database driver
 
 ### UI Components
 - `@radix-ui/*`: Accessible UI primitives
@@ -99,7 +94,6 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 - `@vitejs/plugin-react`: Vite React plugin
 - `@types/*`: TypeScript type definitions
 - `autoprefixer`: PostCSS plugin
-- `drizzle-kit`: Database migration toolkit
 - `tsx`: TypeScript execution engine
 
 ## 🛠️ Installation & Setup
@@ -107,7 +101,6 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
 ### Prerequisites
 - Node.js 18+ installed on your machine
 - npm or yarn package manager
-- PostgreSQL database (optional - uses in-memory storage by default)
 
 ### Step-by-Step Setup
 
@@ -123,15 +116,7 @@ A beautiful, responsive landing page for LocalQR - a platform for travelers, loc
    ```
 
 3. **Environment Setup (Optional)**
-   Create a `.env` file in the root directory if you want to use a PostgreSQL database:
-   ```env
-   DATABASE_URL=postgresql://username:password@localhost:5432/localqr
-   PGPORT=5432
-   PGUSER=your_username
-   PGPASSWORD=your_password
-   PGDATABASE=localqr
-   PGHOST=localhost
-   ```
+   No environment variables are required for this landing page project.
 
 4. **Start the development server**
    ```bash
@@ -251,11 +236,12 @@ For Replit deployment, the application is already configured with the necessary 
 
 ## 🔧 Development Notes
 
-- The project uses a monorepo structure with shared TypeScript types
-- Database operations are abstracted through storage interfaces
-- The Vite development server is integrated with Express for seamless full-stack development
+- The project is a static landing page with minimal backend requirements
+- No database setup or configuration needed
+- The Vite development server is integrated with Express for seamless development
 - All components are built with accessibility in mind using proper ARIA attributes
 - The design system is extensible and follows atomic design principles
+- Simple storage interface is included for future extensibility if needed
 
 ## 📝 Contributing
 
