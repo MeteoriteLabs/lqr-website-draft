@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Plus, MapPin, Utensils, GripVertical } from 'lucide-react';
+import { Plus, MapPin, Utensils, GripVertical, CheckCircle } from 'lucide-react';
 import { GridOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -34,7 +34,7 @@ export default function CreateCustomize() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-charcoal">Add your favorite spots</h4>
                   <p className="text-gray-600">Create a list with your must-visits</p>
@@ -48,7 +48,7 @@ export default function CreateCustomize() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-charcoal">Organize them by city or theme</h4>
                   <p className="text-gray-600">Create categories that make sense to your audience</p>
@@ -62,7 +62,7 @@ export default function CreateCustomize() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle className="text-green-500 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-charcoal">Generate your QR instantly</h4>
                   <p className="text-gray-600">Your personalized QR is ready in seconds</p>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { BarChart3, Eye, Globe } from 'lucide-react';
 import { AnalyticsOverlay } from './SVGOverlays';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -35,7 +36,7 @@ export default function Analytics() {
                 viewport={{ once: true }}
                 className="flex items-start space-x-3"
               >
-                <span className="text-blue-400 text-xl">📊</span>
+                <BarChart3 className="text-blue-400 w-6 h-6 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-white">See what's working</h4>
                   <p className="text-gray-300">Track popularity of your recommendations</p>

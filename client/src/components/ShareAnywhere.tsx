@@ -52,7 +52,7 @@ export default function ShareAnywhere() {
                   <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
                   <span className="font-semibold text-charcoal">@traveler_jane</span>
                 </div>
-                <p className="text-sm text-charcoal mb-2">My Tokyo food guide 🍜 localqr.earth/jane</p>
+                <p className="text-sm text-charcoal mb-2">My Tokyo food guide localqr.earth/jane</p>
                 <div className="w-16 h-16 bg-black rounded grid grid-cols-4 gap-1 p-1">
                   {Array(16).fill(0).map((_, i) => (
                     <div key={i} className={`rounded-sm ${Math.random() > 0.5 ? 'bg-white' : 'bg-black'}`} />
