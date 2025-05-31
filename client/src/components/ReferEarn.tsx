@@ -7,11 +7,11 @@ export default function ReferEarn() {
   const { content } = useLanguage();
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--clay-tone))' }}>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden" style={{ backgroundColor: 'hsl(var(--clay-tone))' }}>
       <PassportStampPattern />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -59,10 +59,10 @@ export default function ReferEarn() {
             viewport={{ once: true }}
             className="text-white space-y-6"
           >
-            <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               {content.sections.referEarn.headline}
             </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
               {content.sections.referEarn.subtext}
             </p>
             
