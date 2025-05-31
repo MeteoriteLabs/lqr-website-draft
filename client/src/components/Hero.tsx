@@ -62,7 +62,7 @@ export default function Hero() {
                     placeholder={content.hero.inputPlaceholder}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue py-[10px] px-3 h-auto"
+                    className="flex-1 bg-white/10 border-white/30 mt-2 sm:mt-0 rounded-lg sm:rounded-l-none sm:rounded-r-lg text-white placeholder-gray-400 focus:ring-cta-blue py-[10px] px-3 h-auto input-animated"
                     onKeyPress={(e) => e.key === 'Enter' && handleClaimQR()}
                   />
                 </div>
@@ -78,9 +78,14 @@ export default function Hero() {
                   onClick={handleClaimQR}
                   disabled={!username.trim() || isLoading}
                   size="lg"
-                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg"
+                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg btn-animated"
                 >
-                  {isLoading ? 'Creating your LocalQR...' : content.hero.ctaButton}
+                  {isLoading ? (
+                    <span className="flex items-center gap-2">
+                      <LoadingSpinner size="sm" />
+                      Creating your LocalQR...
+                    </span>
+                  ) : content.hero.ctaButton}
                 </Button>
               </motion.div>
             </div>
@@ -96,7 +101,14 @@ export default function Hero() {
             <motion.div
               whileHover={{ rotate: 0 }}
               initial={{ rotate: 3 }}
-              transition={{ duration: 0.3 }}
+              animate={{ 
+                rotate: 3,
+                y: [0, -10, 0]
+              }}
+              transition={{ 
+                rotate: { duration: 0.3 },
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+              }}
               className="bg-white rounded-3xl p-6 shadow-2xl max-w-sm mx-auto"
             >
               <div className="bg-gray-100 rounded-2xl p-8 text-center">
