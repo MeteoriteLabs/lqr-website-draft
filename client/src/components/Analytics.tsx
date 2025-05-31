@@ -1,0 +1,104 @@
+import { motion } from 'framer-motion';
+import { AnalyticsOverlay } from './SVGOverlays';
+import { useLanguage } from '@/hooks/useLanguage';
+
+export default function Analytics() {
+  const { content } = useLanguage();
+
+  return (
+    <section className="bg-deep-blue py-20 relative overflow-hidden">
+      <AnalyticsOverlay />
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-white space-y-6"
+          >
+            <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
+              {content.sections.analytics.headline}
+            </h2>
+            <p className="text-xl text-gray-300 leading-relaxed">
+              {content.sections.analytics.subtext}
+            </p>
+          </motion.div>
+
+          {/* Analytics Chart UI */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-xl shadow-2xl p-6"
+          >
+            <div className="space-y-6">
+              {/* Header */}
+              <div className="flex items-center justify-between">
+                <h3 className="font-semibold text-charcoal">Analytics Dashboard</h3>
+                <span className="text-sm text-gray-500">Last 30 days</span>
+              </div>
+
+              {/* Stats Cards */}
+              <div className="grid grid-cols-3 gap-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="bg-gray-50 rounded-lg p-4 text-center"
+                >
+                  <div className="text-2xl font-bold text-cta-blue">1,247</div>
+                  <div className="text-xs text-gray-500">Total Scans</div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  viewport={{ once: true }}
+                  className="bg-gray-50 rounded-lg p-4 text-center"
+                >
+                  <div className="text-2xl font-bold text-emerald-500">84%</div>
+                  <div className="text-xs text-gray-500">Engagement</div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  viewport={{ once: true }}
+                  className="bg-gray-50 rounded-lg p-4 text-center"
+                >
+                  <div className="text-2xl font-bold text-orange-500">23</div>
+                  <div className="text-xs text-gray-500">Referrals</div>
+                </motion.div>
+              </div>
+
+              {/* Chart */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+                viewport={{ once: true }}
+                className="h-32 bg-gray-50 rounded-lg flex items-end justify-center space-x-2 p-4"
+              >
+                {[60, 80, 40, 90, 70, 100, 55].map((height, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ height: 0 }}
+                    whileInView={{ height: `${height}%` }}
+                    transition={{ delay: 1 + index * 0.1, duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="w-4 bg-cta-blue rounded-t"
+                  />
+                ))}
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
