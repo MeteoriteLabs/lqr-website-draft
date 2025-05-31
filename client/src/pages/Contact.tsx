@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Globe, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import Header from '@/components/Header';
 
 // Decorative background pattern components
 const CompassIcon = () => (
@@ -54,6 +55,9 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'hsl(var(--warm-beige))' }}>
+      {/* Header */}
+      <Header />
+      
       {/* Decorative Background Elements */}
       <CompassIcon />
       <WorldMapSilhouette />
