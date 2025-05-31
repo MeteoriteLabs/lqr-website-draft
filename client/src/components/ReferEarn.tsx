@@ -65,18 +65,48 @@ export default function ReferEarn() {
             <p className="text-xl text-gray-300 leading-relaxed">
               {content.sections.referEarn.subtext}
             </p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
-            >
-              <p className="text-sm text-gray-300 flex items-center">
-                <Info className="mr-2" size={16} />
-                {content.sections.referEarn.comingSoon}
-              </p>
-            </motion.div>
+            
+            {/* Bullet Points */}
+            <div className="space-y-4 mt-8">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-yellow-400 text-xl">💰</span>
+                <div>
+                  <h4 className="font-semibold text-white">Turn recommendations into passive rewards</h4>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-yellow-400 text-xl">🌱</span>
+                <div>
+                  <h4 className="font-semibold text-white">Build your network and earn automatically</h4>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.6 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-yellow-400 text-xl">🎁</span>
+                <div>
+                  <h4 className="font-semibold text-white">{content.sections.referEarn.comingSoon}</h4>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -76,6 +76,51 @@ export default function ShareAnywhere() {
             <p className="text-xl text-gray-300 leading-relaxed">
               {content.sections.shareAnywhere.subtext}
             </p>
+            
+            {/* Bullet Points */}
+            <div className="space-y-4 mt-8">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">🔗</span>
+                <div>
+                  <h4 className="font-semibold text-white">Add to your Instagram bio</h4>
+                  <p className="text-gray-300">Share with your followers instantly</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">🖨️</span>
+                <div>
+                  <h4 className="font-semibold text-white">Print it on menus</h4>
+                  <p className="text-gray-300">Physical touchpoints made easy</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.6 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">📚</span>
+                <div>
+                  <h4 className="font-semibold text-white">Include in welcome books</h4>
+                  <p className="text-gray-300">Perfect for hosts and guides</p>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

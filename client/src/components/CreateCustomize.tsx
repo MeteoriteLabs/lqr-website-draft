@@ -24,6 +24,51 @@ export default function CreateCustomize() {
             <p className="text-xl text-gray-600 leading-relaxed">
               {content.sections.createCustomize.subtext}
             </p>
+            
+            {/* Bullet Points */}
+            <div className="space-y-4 mt-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-green-500 text-xl">✅</span>
+                <div>
+                  <h4 className="font-semibold text-charcoal">Add your favorite spots</h4>
+                  <p className="text-gray-600">Create a list with your must-visits</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-green-500 text-xl">✅</span>
+                <div>
+                  <h4 className="font-semibold text-charcoal">Organize them by city or theme</h4>
+                  <p className="text-gray-600">Create categories that make sense to your audience</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-green-500 text-xl">✅</span>
+                <div>
+                  <h4 className="font-semibold text-charcoal">Generate your QR instantly</h4>
+                  <p className="text-gray-600">Your personalized QR is ready in seconds</p>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
 
           {/* UI Dashboard Mockup */}

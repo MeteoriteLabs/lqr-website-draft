@@ -31,20 +31,20 @@ const content: Record<string, LanguageContent> = {
     sections: {
       createCustomize: {
         headline: 'Create and customize your LocalQR in minutes',
-        subtext: 'Add your favorite places, organize by city or theme, and generate your QR instantly.',
+        subtext: 'Add your favorite spots, organize them by city or theme, and generate your QR instantly.',
       },
       shareAnywhere: {
-        headline: 'Share it on socials, storefronts, or welcome kits',
-        subtext: 'Your QR works wherever your story lives — bios, menus, signage, or travel books.',
+        headline: 'Share it on your socials, storefront, or city wall',
+        subtext: 'Add it to your Instagram bio, print it on menus, or include in welcome books — your guide, always ready.',
       },
       analytics: {
-        headline: 'Track clicks, referrals, and top-performing spots',
-        subtext: 'Understand what\'s resonating, and keep your list updated in real time.',
+        headline: 'Track clicks, referrals, and engagement',
+        subtext: 'See what\'s working, who\'s scanning, and which places get the most love — in real time.',
       },
       referEarn: {
         headline: 'Share, refer, and earn',
-        subtext: 'Earn rewards when your QR is used or shared — make your knowledge work for you.',
-        comingSoon: 'Feature launching soon - join the waitlist to be notified!',
+        subtext: 'Turn your recommendations into passive rewards — get credit when others use your QR.',
+        comingSoon: 'Referral rewards program (coming soon)',
       },
       whoIsFor: {
         headline: 'Who is LocalQR for?',

@@ -25,6 +25,51 @@ export default function Analytics() {
             <p className="text-xl text-gray-300 leading-relaxed">
               {content.sections.analytics.subtext}
             </p>
+            
+            {/* Bullet Points */}
+            <div className="space-y-4 mt-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">📊</span>
+                <div>
+                  <h4 className="font-semibold text-white">See what's working</h4>
+                  <p className="text-gray-300">Track popularity of your recommendations</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">👀</span>
+                <div>
+                  <h4 className="font-semibold text-white">Who's scanning</h4>
+                  <p className="text-gray-300">Monitor QR scans and updates</p>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.6 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-3"
+              >
+                <span className="text-blue-400 text-xl">🌍</span>
+                <div>
+                  <h4 className="font-semibold text-white">Top-performing spots</h4>
+                  <p className="text-gray-300">Data-driven insights for better curation</p>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
 
           {/* Analytics Chart UI */}
