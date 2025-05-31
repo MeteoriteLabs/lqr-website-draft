@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Coins, Info, DollarSign, Sprout, Gift } from 'lucide-react';
 import { BadgeOverlay } from './SVGOverlays';
+import { PassportStampPattern } from './BackgroundPatterns';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function ReferEarn() {
