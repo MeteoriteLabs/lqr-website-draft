@@ -1,12 +1,14 @@
 import { QrCode, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'wouter';
+import { GlobePattern } from './BackgroundPatterns';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function Footer() {
   const { content } = useLanguage();
 
   return (
-    <footer className="bg-charcoal-dark py-16">
+    <footer className="bg-charcoal-dark py-16 relative overflow-hidden">
+      <GlobePattern />
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}

@@ -9,6 +9,7 @@ export default function ReferEarn() {
 
   return (
     <section className="bg-maroon-red py-20 relative overflow-hidden">
+      <PassportStampPattern />
       <BadgeOverlay />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">

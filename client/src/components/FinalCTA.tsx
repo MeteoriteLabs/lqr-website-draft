@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { WorldOverlay } from './SVGOverlays';
+import { GridMapPattern } from './BackgroundPatterns';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from '@/components/ui/button';
 
@@ -17,6 +18,7 @@ export default function FinalCTA() {
 
   return (
     <section className="bg-cta-blue py-20 relative overflow-hidden">
+      <GridMapPattern />
       <WorldOverlay />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
