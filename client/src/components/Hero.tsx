@@ -55,7 +55,7 @@ export default function Hero() {
                   {content.hero.inputLabel}
                 </Label>
                 <div className="flex flex-col sm:flex-row">
-                  <span className="inline-flex items-center px-4 py-3 bg-white/20 border border-white/30 sm:border-r-0 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-sm whitespace-nowrap">
+                  <span className="inline-flex items-center px-4 py-[10px] bg-white/20 border border-white/30 sm:border-r-0 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-sm whitespace-nowrap">
                     localqr.earth/
                   </span>
                   <Input
