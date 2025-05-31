@@ -8,7 +8,9 @@ export default function ShareAnywhere() {
 
   return (
     <section className="bg-clay-brown py-20 relative overflow-hidden">
-      <TravelPathPattern />
+      <div className="floating-background">
+        <TravelPathPattern />
+      </div>
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Visual */}

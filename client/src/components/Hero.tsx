@@ -5,6 +5,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { LoadingSpinner } from './LoadingSpinner';
 
 export default function Hero() {
   const [username, setUsername] = useState('');
@@ -24,7 +25,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="bg-evergreen relative overflow-hidden min-h-screen flex items-center">
+    <section id="hero" className="bg-evergreen animated-gradient relative overflow-hidden min-h-screen flex items-center">
       
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -78,7 +79,7 @@ export default function Hero() {
                   onClick={handleClaimQR}
                   disabled={!username.trim() || isLoading}
                   size="lg"
-                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg btn-animated"
+                  className="w-full lg:w-auto bg-cta-blue text-white hover:bg-blue-700 font-semibold text-lg btn-animated ripple-effect"
                 >
                   {isLoading ? (
                     <span className="flex items-center gap-2">
